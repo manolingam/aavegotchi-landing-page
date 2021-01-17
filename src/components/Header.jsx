@@ -6,7 +6,7 @@ import header_logo from '../assets/header_logo.svg';
 const Header = () => {
   return (
     <header>
-      <img src={header_overlay} alt='overlay pixel' id='header_overlay' />
+      <img src={header_overlay} alt='pixel group' id='header-pixel-divider' />
       <img src={header_logo} alt='logo' id='header_logo' />
       <div>
         <span>
