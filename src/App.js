@@ -1,6 +1,6 @@
-import './App.scss';
-
 import Header from './components/Header';
+
+import './App.scss';
 
 import overlay_one from './assets/pixel_overlay_one.svg';
 import overlay_two from './assets/pixel_overlay_two.svg';
