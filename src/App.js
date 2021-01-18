@@ -3,11 +3,11 @@ import One from './sections/One';
 import Two from './sections/Two';
 import Three from './sections/Three';
 import Four from './sections/Four';
+import Five from './sections/Five';
+import Six from './sections/Six';
+import Seven from './sections/Seven';
 
 import './App.scss';
-
-import overlay_six from './assets/pixel_overlay_six.svg';
-import overlay_seven from './assets/pixel_overlay_seven.svg';
 
 function App() {
   return (
@@ -17,22 +17,9 @@ function App() {
       <Two />
       <Three />
       <Four />
-      <section id='five'>
-        <div id='secondary-bg'></div>
-      </section>
-      <section id='six'>
-        <img
-          className='section-pixel-divider'
-          src={overlay_six}
-          alt='pixel group'
-        />
-      </section>
-      <section id='seven'>
-        <div id='top'>
-          <img id='sub-overlay' src={overlay_seven} alt='overlay pixel' />
-        </div>
-        <div id='bottom'></div>
-      </section>
+      <Five />
+      <Six />
+      <Seven />
     </div>
   );
 }
