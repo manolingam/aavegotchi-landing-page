@@ -1,4 +1,5 @@
 @import 'node_modules/pixel-borders/src/styles/pixel-borders.scss';
+@import '../../utils/constants.scss';
 
 #one {
   width: 100%;
@@ -6,28 +7,28 @@
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: space-around;
-  div {
-    margin: 3rem;
+  justify-content: space-evenly;
+
+  #gotchigang-image {
+    width: 450px;
+    position: relative;
+    margin: 5rem 3rem 3rem 3rem;
   }
-  .sub-container-one {
-    img {
-      width: 450px;
-      position: relative;
-    }
-  }
-  .sub-container-two {
-    width: 50%;
+
+  .right-container {
+    width: 40%;
+    height: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    color: #3f0065;
-    .title-tag {
+    justify-content: center;
+    margin: 5rem 3rem 3rem 3rem;
+    .slogan-container {
       width: 100%;
-      font-family: 'Press Start 2P', cursive;
+      font-family: $press-start-font;
       font-size: 28px;
       line-height: 60px;
+      color: #3f0065;
       p:nth-child(1) {
         text-align: left;
       }
@@ -35,26 +36,47 @@
         text-align: right;
       }
     }
-    #explainer {
-      font-family: 'Source Sans Pro', sans-serif;
+
+    #explainer-text {
+      font-family: $source-sans-font;
       font-size: 20px;
       line-height: 36px;
       letter-spacing: 2px;
+      color: #3f0065;
+      span {
+        color: #bd00e0;
+        text-decoration: underline;
+      }
     }
-    button {
-      padding: 0.8rem 1rem 0.8rem 1rem;
-      margin-left: auto;
-      @include pixel-borders(
-        $corner-size: 1,
-        $border-size: 4px,
-        $border-color: #000,
-        $border-inset-color: false
-      );
-      background: #f0d129;
-      font-family: 'Press Start 2P', cursive;
-      font-size: 18px;
-      color: white;
-      -webkit-text-stroke: 1.5px black;
+
+    .right-bottom-container {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+      margin-top: 1rem;
+      #rainbow-text-image {
+        margin-right: 2rem;
+      }
+      button {
+        padding: 0.8rem 1rem 0.8rem 1rem;
+        @include pixel-borders(
+          $corner-size: 1,
+          $border-size: 4px,
+          $border-color: #000,
+          $border-inset-color: false
+        );
+        background: #f0d129;
+        font-family: $press-start-font;
+        font-size: 18px;
+        color: white;
+        -webkit-text-stroke: 1.5px black;
+      }
+    }
+
+    #powered-by-aave-image {
+      margin-right: auto;
     }
   }
 }

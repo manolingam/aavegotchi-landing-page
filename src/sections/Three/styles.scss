@@ -1,21 +1,25 @@
+@import '../../utils/constants.scss';
+
 #three {
-  height: 150vh;
+  height: 160vh;
   background: linear-gradient(180deg, #3f0065 0%, #8c0087 100%);
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+
   #section-title {
-    font-family: 'Press Start 2P', cursive;
+    font-family: $press-start-font;
     color: white;
     text-align: center;
     font-size: 32px;
     margin-top: 5rem;
     margin-bottom: 1rem;
   }
-  .section-subtitle {
+
+  .lines {
     width: 70%;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: $source-sans-font;
     text-align: center;
     line-height: 36px;
     letter-spacing: 2px;
@@ -23,6 +27,7 @@
     margin: 0 auto 0 auto;
     text-transform: uppercase;
   }
+
   #core-container {
     width: 60%;
     height: 50%;
@@ -39,53 +44,94 @@
       align-items: center;
       button {
         width: 200px;
-        padding: 2rem;
+        padding: 1.5rem 1.5rem 40px 1.5rem;
         border: none;
         background: url('../../assets/buttons/pink_button.png');
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
-        font-family: 'Press Start 2P', cursive;
+        font-family: $press-start-font;
         color: white;
         -webkit-text-stroke: 1px black;
         font-size: 20px;
       }
     }
-    .info-card {
+
+    .info-card-text {
       background-color: white;
       width: 350px;
       min-height: 100px;
       position: absolute;
-      font-family: 'Source Sans Pro', sans-serif;
+      font-family: $source-sans-font;
       text-align: left;
-      letter-spacing: 1.5px;
-      border-image: url('../../assets/borders/black_box_border.png') 34 round
-        stretch;
+      letter-spacing: 0.5px;
       border-width: 20px;
       border-style: solid;
       border-radius: 35px;
       border-image-outset: 0.2;
     }
+
+    .info-card-text-top {
+      border-image: url('../../assets/borders/pink_box_border.png') 34 round
+        stretch;
+      color: #3f0065;
+    }
+
+    .info-card-text-bottom {
+      border-image: url('../../assets/borders/violet_box_border.png') 34 round
+        stretch;
+      color: #280041;
+    }
+
     p:nth-child(2) {
       top: 50px;
-      left: -76px;
+      left: -45px;
     }
     p:nth-child(3) {
       top: 50px;
-      right: -76px;
+      right: -45px;
     }
     p:nth-child(4) {
       bottom: 50px;
-      left: -76px;
+      left: -45px;
     }
     p:nth-child(5) {
       bottom: 50px;
-      right: -76px;
+      right: -45px;
     }
-    #ghst-token {
+
+    #ghst-token-image {
       width: 200px;
     }
+
+    #arrow-container {
+      position: relative;
+
+      #pink-arrow-right {
+        position: absolute;
+        top: -70px;
+        left: 180px;
+      }
+      #pink-arrow-left {
+        position: absolute;
+        top: -70px;
+        right: 180px;
+        transform: rotateY(3.142rad);
+      }
+      #blue-arrow-right {
+        position: absolute;
+        bottom: -55px;
+        right: -155px;
+        transform: rotateY(3.142rad);
+      }
+      #blue-arrow-left {
+        position: absolute;
+        bottom: -55px;
+        left: -155px;
+      }
+    }
   }
+
   #notify-container {
     width: 60%;
     color: black;
@@ -96,13 +142,24 @@
     border-style: solid;
     border-radius: 35px;
     border-image-outset: 0.2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .container-text {
+      display: flex;
+      flex-direction: column;
+      margin-left: 1rem;
+    }
+
     p:nth-child(1) {
-      font-family: 'Press Start 2P', cursive;
+      font-family: $press-start-font;
       margin-bottom: 1rem;
     }
     p:nth-child(2) {
-      font-family: 'Source Sans Pro', sans-serif;
+      font-family: $source-sans-font;
       letter-spacing: 1.5;
+      line-height: 25px;
     }
   }
 }
