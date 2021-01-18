@@ -2,6 +2,7 @@ import Header from './components/Header';
 import One from './sections/One';
 import Two from './sections/Two';
 import Three from './sections/Three';
+import Four from './sections/Four';
 
 import './App.scss';
 
@@ -15,10 +16,7 @@ function App() {
       <One />
       <Two />
       <Three />
-      <section id='four'>
-        {/* <img id='overlay' src={overlay_four} alt='overlay pixel' /> */}
-        <div id='secondary-bg'></div>
-      </section>
+      <Four />
       <section id='five'>
         <div id='secondary-bg'></div>
       </section>
