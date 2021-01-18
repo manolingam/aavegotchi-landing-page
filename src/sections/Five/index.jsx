@@ -1,20 +1,22 @@
 import React from 'react';
 
-import aavegotchi_dao from '../assets/aavegotchi_dao.svg';
-import beach_icon from '../assets/beach_snap.svg';
+import './styles.scss';
 
-const Five = () => {
+import aavegotchi_dao_logo from '../../assets/logos/aavegotchi_dao_logo.svg';
+import beach_snap_image from '../../assets/images/beach_snap_image.svg';
+
+const Index = () => {
   return (
     <section id='five'>
       <div id='secondary-bg'></div>
       <div className='core-container'>
-        <img src={aavegotchi_dao} width='200px' alt='aavegothci dao' />
+        <img src={aavegotchi_dao_logo} width='200px' alt='aavegothci dao' />
         <p id='description'>
           Governance for Aavegotchi will gradually become more decentralized
           through the Avagotchi DAO. This will be accomplished in three phases.
         </p>
         <div className='card-container'>
-          <img src={beach_icon} width='100px' alt='beach icon' />
+          <img src={beach_snap_image} width='100px' alt='beach icon' />
           <div>
             <span>Phase 1</span>
             <h2>Genesis</h2>
@@ -27,7 +29,7 @@ const Five = () => {
           </div>
         </div>
         <div className='card-container'>
-          <img src={beach_icon} width='100px' alt='beach icon' />
+          <img src={beach_snap_image} width='100px' alt='beach icon' />
           <div>
             <span>Phase 2</span>
             <h2>Metamorphosis</h2>
@@ -39,7 +41,7 @@ const Five = () => {
           </div>
         </div>
         <div className='card-container button-container'>
-          <img src={beach_icon} width='100px' alt='beach icon' />
+          <img src={beach_snap_image} width='100px' alt='beach icon' />
           <div>
             <span>Phase 3</span>
             <h2>Oasis</h2>
@@ -56,4 +58,4 @@ const Five = () => {
   );
 };
 
-export default Five;
+export default Index;

@@ -1,0 +1,44 @@
+@import 'node_modules/pixel-borders/src/styles/pixel-borders.scss';
+@import '../../utils/constants.scss';
+
+header {
+  height: 32vh;
+  position: relative;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  div {
+    display: flex;
+    flex-direction: row;
+    font-family: $press-start-font;
+    margin-top: 2rem;
+    span {
+      display: flex;
+      flex-direction: row;
+      padding: 1rem;
+    }
+    p {
+      color: #d500ff;
+    }
+  }
+  #header-logo {
+    width: 250px;
+  }
+  button {
+    padding: 0.8rem 1rem 0.8rem 1rem;
+    margin: 2rem;
+    @include pixel-borders(
+      $corner-size: 1,
+      $border-size: 4px,
+      $border-color: #000,
+      $border-inset-color: false
+    );
+    background: #d500ff;
+    font-size: 18px;
+    font-family: $press-start-font;
+    color: white;
+    -webkit-text-stroke: 1.5px black;
+  }
+}

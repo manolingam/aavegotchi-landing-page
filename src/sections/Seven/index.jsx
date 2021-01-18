@@ -1,12 +1,14 @@
 import React from 'react';
 
-import overlay_seven from '../assets/pixel_overlay_seven.svg';
+import './styles.scss';
 
-const Seven = () => {
+import pixel_overlay_seven from '../../assets/overlays/pixel_overlay_seven.svg';
+
+const Index = () => {
   return (
     <section id='seven'>
       <div id='top'>
-        <img id='sub-overlay' src={overlay_seven} alt='overlay pixel' />
+        <img id='sub-overlay' src={pixel_overlay_seven} alt='overlay pixel' />
         <h3>Sign up to be notified when new features are released!</h3>
         <div>
           <input placeholder='user@email.com'></input>
@@ -18,4 +20,4 @@ const Seven = () => {
   );
 };
 
-export default Seven;
+export default Index;

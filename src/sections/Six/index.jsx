@@ -1,24 +1,26 @@
 import React from 'react';
 
-import overlay_six from '../assets/pixel_overlay_six.svg';
-import gotchi from '../assets/gotchi.svg';
+import './styles.scss';
 
-const Six = () => {
+import pixel_overlay_six from '../../assets/overlays/pixel_overlay_six.svg';
+import gotchi_image from '../../assets/images/gotchi_image.svg';
+
+const Index = () => {
   return (
     <section id='six'>
       <img
         className='section-pixel-divider'
-        src={overlay_six}
+        src={pixel_overlay_six}
         alt='pixel group'
       />
       <div className='core-container'>
         <div className='top-container'>
-          <img src={gotchi} alt='gotchi' width='100px' />
+          <img src={gotchi_image} alt='gotchi' width='100px' />
           <div>
             <h2>Welcome to the Metaverse</h2>
             <p>Check out what's coming out this quarter</p>
           </div>
-          <img src={gotchi} alt='gotchi' width='100px' />
+          <img src={gotchi_image} alt='gotchi' width='100px' />
         </div>
         <p id='description'>
           This is the Aavegotchi realm where Gotchis live, work, and play. The
@@ -74,4 +76,4 @@ const Six = () => {
   );
 };
 
-export default Six;
+export default Index;

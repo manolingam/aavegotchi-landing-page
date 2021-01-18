@@ -1,14 +1,15 @@
 import React from 'react';
 
-import gotchi from '../assets/gotchi.svg';
-import dai_icon from '../assets/dai_icon.svg';
-import usdc_icon from '../assets/usdc_icon.svg';
-import dice_icon from '../assets/dice.svg';
+import './styles.scss';
 
-const Four = () => {
+import gotchi_image from '../../assets/images/gotchi_image.svg';
+import dai_icon from '../../assets/icons/dai_icon.svg';
+import usdc_icon from '../../assets/icons/usdc_icon.svg';
+import dice_icon from '../../assets/icons/dice_icon.svg';
+
+const Index = () => {
   return (
     <section id='four'>
-      {/* <img id='overlay' src={overlay_four} alt='overlay pixel' /> */}
       <div id='core-container'>
         <h1>Anatomy of a Gotchi</h1>
         <p>
@@ -22,7 +23,7 @@ const Four = () => {
           <div id='sub-container-one'>
             <p className='mb3'>Preview</p>
             <div className='pixel-border-container'>
-              <img src={gotchi} alt='gotchi' />
+              <img src={gotchi_image} alt='gotchi' />
               <p>Type a name</p>
               <div>
                 <p>Spirit Force:</p>
@@ -97,4 +98,4 @@ const Four = () => {
   );
 };
 
-export default Four;
+export default Index;

@@ -1,18 +1,20 @@
 import React from 'react';
 
-import overlay_one from '../assets/pixel_overlay_one.svg';
-import gotchigang from '../assets/gotchigang.svg';
+import './styles.scss';
 
-const One = () => {
+import pixel_overlay_one from '../../assets/overlays/pixel_overlay_one.svg';
+import gotchigang_image from '../../assets/images/gotchigang_image.svg';
+
+const Index = () => {
   return (
     <section id='one'>
       <img
         className='section-pixel-divider'
-        src={overlay_one}
+        src={pixel_overlay_one}
         alt='pixel group'
       />
       <div className='sub-container-one'>
-        <img src={gotchigang} alt='gotchigang' id='gotchigang' />
+        <img src={gotchigang_image} alt='gotchigang' id='gotchigang' />
       </div>
       <div className='sub-container-two'>
         <div className='title-tag'>
@@ -30,4 +32,4 @@ const One = () => {
   );
 };
 
-export default One;
+export default Index;

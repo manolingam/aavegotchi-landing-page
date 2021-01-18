@@ -1,0 +1,60 @@
+@import 'node_modules/pixel-borders/src/styles/pixel-borders.scss';
+
+#one {
+  width: 100%;
+  background: linear-gradient(180deg, #b283e1 0%, #f5d7ff 100%);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  div {
+    margin: 3rem;
+  }
+  .sub-container-one {
+    img {
+      width: 450px;
+      position: relative;
+    }
+  }
+  .sub-container-two {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: #3f0065;
+    .title-tag {
+      width: 100%;
+      font-family: 'Press Start 2P', cursive;
+      font-size: 28px;
+      line-height: 60px;
+      p:nth-child(1) {
+        text-align: left;
+      }
+      p:nth-child(2) {
+        text-align: right;
+      }
+    }
+    #explainer {
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 20px;
+      line-height: 36px;
+      letter-spacing: 2px;
+    }
+    button {
+      padding: 0.8rem 1rem 0.8rem 1rem;
+      margin-left: auto;
+      @include pixel-borders(
+        $corner-size: 1,
+        $border-size: 4px,
+        $border-color: #000,
+        $border-inset-color: false
+      );
+      background: #f0d129;
+      font-family: 'Press Start 2P', cursive;
+      font-size: 18px;
+      color: white;
+      -webkit-text-stroke: 1.5px black;
+    }
+  }
+}

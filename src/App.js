@@ -1,11 +1,11 @@
-import Header from './components/Header';
-import One from './sections/One';
-import Two from './sections/Two';
-import Three from './sections/Three';
-import Four from './sections/Four';
-import Five from './sections/Five';
-import Six from './sections/Six';
-import Seven from './sections/Seven';
+import Header from './sections/Header/index';
+import One from './sections/One/index';
+import Two from './sections/Two/index';
+import Three from './sections/Three/index';
+import Four from './sections/Four/index';
+import Five from './sections/Five/index';
+import Six from './sections/Six/index';
+import Seven from './sections/Seven/index';
 
 import './App.scss';
 

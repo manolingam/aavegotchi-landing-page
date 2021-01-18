@@ -1,14 +1,16 @@
 import React from 'react';
 
-import overlay_three from '../assets/pixel_overlay_three.svg';
-import GHST_token from '../assets/GHST_token_bg.svg';
+import './styles.scss';
 
-const Three = () => {
+import pixel_overlay_three from '../../assets/overlays/pixel_overlay_three.svg';
+import ghst_token_logo from '../../assets/logos/ghst_token_logo.svg';
+
+const Index = () => {
   return (
     <section id='three'>
       <img
         className='section-pixel-divider'
-        src={overlay_three}
+        src={pixel_overlay_three}
         alt='pixel group'
       />
       <p id='section-title'>The GHST Token</p>
@@ -25,7 +27,7 @@ const Three = () => {
       <div id='core-container'>
         <div id='button-container'>
           <button id='buy-ghst-button'>buy GHST</button>
-          <img id='ghst-token' src={GHST_token} alt='ghost token' />
+          <img id='ghst-token' src={ghst_token_logo} alt='ghost token' />
           <button id='spend-ghst-button'>spend GHST</button>
         </div>
 
@@ -58,4 +60,4 @@ const Three = () => {
   );
 };
 
-export default Three;
+export default Index;
