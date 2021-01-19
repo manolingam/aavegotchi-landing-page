@@ -1,3 +1,5 @@
+@import '../../utils/constants.scss';
+
 #six {
   height: 180vh;
   background: url('../../assets/backgrounds/dao_background.png');
@@ -8,6 +10,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
   .core-container {
     width: 100%;
     height: 100%;
@@ -15,6 +18,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    color: #3f0065;
+
     .top-container {
       width: 100vw;
       display: flex;
@@ -28,26 +33,29 @@
         justify-content: space-evenly;
       }
       h2 {
-        font-family: 'Press Start 2P', cursive;
+        font-family: $press-start-font;
       }
       p {
-        font-family: 'Source Sans Pro', sans-serif;
+        font-family: $source-sans-font;
         text-align: center;
         letter-spacing: 3px;
         text-transform: uppercase;
       }
     }
-    #description {
+
+    #description-text {
       width: 50%;
-      font-family: 'Source Sans Pro', sans-serif;
+      font-family: $source-sans-font;
       letter-spacing: 3px;
       font-size: 25px;
       text-align: center;
     }
+
     .card-container {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-gap: 1rem;
+
       div {
         height: 325px;
         width: 380px;
@@ -64,10 +72,10 @@
           border-radius: 50%;
         }
         h3 {
-          font-family: 'Press Start 2P', cursive;
+          font-family: $press-start-font;
         }
         p {
-          font-family: 'Source Sans Pro', sans-serif;
+          font-family: $source-sans-font;
           letter-spacing: 3px;
           line-height: 1.2;
         }

@@ -4,6 +4,7 @@ import './styles.scss';
 
 import aavegotchi_dao_logo from '../../assets/logos/aavegotchi_dao_logo.svg';
 import beach_snap_image from '../../assets/images/beach_snap_image.svg';
+import violet_arrow_image from '../../assets/images/violet_arrow_image.png';
 
 const Index = () => {
   return (
@@ -11,11 +12,11 @@ const Index = () => {
       <div id='secondary-bg'></div>
       <div className='core-container'>
         <img src={aavegotchi_dao_logo} width='200px' alt='aavegothci dao' />
-        <p id='description'>
+        <p id='description-text'>
           Governance for Aavegotchi will gradually become more decentralized
           through the Avagotchi DAO. This will be accomplished in three phases.
         </p>
-        <div className='card-container'>
+        <div className='card-container card-container-one'>
           <img src={beach_snap_image} width='100px' alt='beach icon' />
           <div>
             <span>Phase 1</span>
@@ -27,8 +28,14 @@ const Index = () => {
               Phase 2.
             </p>
           </div>
+          <img
+            src={violet_arrow_image}
+            alt='violet arrow'
+            id='violet-arrow-image'
+          />
+          <h1 style={{ backgroundColor: '#FFD6E4', color: '#FF00D6' }}>Live</h1>
         </div>
-        <div className='card-container'>
+        <div className='card-container card-container-two'>
           <img src={beach_snap_image} width='100px' alt='beach icon' />
           <div>
             <span>Phase 2</span>
@@ -39,6 +46,12 @@ const Index = () => {
               wearables, and voting to migrate to Phase 3.
             </p>
           </div>
+          <img
+            src={violet_arrow_image}
+            alt='violet arrow'
+            id='violet-arrow-image'
+          />
+          <h1 style={{ backgroundColor: '#ECCDFF', color: '#9F3DDB' }}>Q2</h1>
         </div>
         <div className='card-container button-container'>
           <img src={beach_snap_image} width='100px' alt='beach icon' />
@@ -51,6 +64,7 @@ const Index = () => {
               will be voted on by the CHST token holders.
             </p>
           </div>
+          <h1 style={{ backgroundColor: '#ECCDFF', color: '#9F3DDB' }}>Q4</h1>
           <button>join DAO</button>
         </div>
       </div>

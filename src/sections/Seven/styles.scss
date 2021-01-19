@@ -1,11 +1,15 @@
+@import '../../utils/constants.scss';
+
 #seven {
   height: 120vh;
   display: flex;
   flex-direction: column;
+
   div {
     width: 100%;
   }
-  #top {
+
+  #top-container {
     height: 60%;
     background: linear-gradient(180deg, #33c6c6 0%, #09f5bd 100%);
     position: relative;
@@ -24,7 +28,7 @@
     }
     h3 {
       width: 50%;
-      font-family: 'Press Start 2P', cursive;
+      font-family: $press-start-font;
       color: white;
       margin-top: 120px;
       margin-bottom: 2rem;
@@ -40,7 +44,7 @@
     }
     input::placeholder {
       color: #b0b0b0;
-      font-family: 'Press Start 2P', cursive;
+      font-family: $press-start-font;
       text-align: center;
     }
     button {
@@ -52,7 +56,8 @@
       margin-left: 1rem;
     }
   }
-  #bottom {
+
+  #bottom-container {
     height: 40%;
     background: linear-gradient(180deg, #091038 0%, #320018 100%);
   }
