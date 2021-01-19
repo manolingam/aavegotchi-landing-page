@@ -1,0 +1,70 @@
+@import '../../utils/constants.scss';
+
+#two {
+  height: 120vh;
+  background: linear-gradient(
+    #ccffff 0%,
+    #76e6ff 15%,
+    #50c0ff 45%,
+    #3576f4 70%,
+    #391ee0 100%
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .sub-container {
+    width: 50%;
+    margin-top: 150px;
+    background-color: white;
+    font-family: $source-sans-font;
+    position: relative;
+    border-image: url('../../assets/borders/black_box_border.png') 34 round
+      stretch;
+    border-width: 30px;
+    border-style: solid;
+    border-radius: 35px;
+    border-image-outset: 0.2;
+    h3 {
+      font-family: $press-start-font;
+      color: #d500ff;
+      margin-top: 1rem;
+    }
+    p {
+      line-height: 28px;
+      letter-spacing: 1.5px;
+      color: #040e23;
+    }
+    .list {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin: 2rem;
+      img {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        width: 50px;
+      }
+    }
+
+    .overlap-container {
+      position: absolute;
+      top: -115px;
+      left: -210px;
+      background-color: white;
+      border-image: url('../../assets/borders/black_box_border.png') 34 round
+        stretch;
+      border-width: 30px;
+      border-style: solid;
+      border-radius: 35px;
+      border-image-outset: 0.2;
+      h3 {
+        margin-top: 0;
+      }
+      p {
+        color: #5f0870;
+        margin-top: 0.3rem;
+      }
+    }
+  }
+}

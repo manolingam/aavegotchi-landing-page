@@ -1,0 +1,64 @@
+@import '../../utils/constants.scss';
+
+#seven {
+  height: 120vh;
+  display: flex;
+  flex-direction: column;
+
+  div {
+    width: 100%;
+  }
+
+  #top-container {
+    height: 60%;
+    background: linear-gradient(180deg, #33c6c6 0%, #09f5bd 100%);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    #sub-overlay {
+      width: 100%;
+      position: absolute;
+      bottom: -5px;
+    }
+    div {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+    h3 {
+      width: 50%;
+      font-family: $press-start-font;
+      color: white;
+      margin-top: 120px;
+      margin-bottom: 2rem;
+      text-align: center;
+      letter-spacing: 3px;
+      line-height: 2.4;
+    }
+    input {
+      width: 400px;
+      border: none;
+      padding: 1.5rem;
+      background-color: #9f3ddb;
+    }
+    input::placeholder {
+      color: #b0b0b0;
+      font-family: $press-start-font;
+      text-align: center;
+    }
+    button {
+      border: none;
+      width: 210px;
+      background: url('../../assets/buttons/remind_me_button.svg') no-repeat;
+      background-position: center;
+      background-size: contain;
+      margin-left: 1rem;
+    }
+  }
+
+  #bottom-container {
+    height: 40%;
+    background: linear-gradient(180deg, #091038 0%, #320018 100%);
+  }
+}
