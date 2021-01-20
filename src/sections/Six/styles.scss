@@ -11,6 +11,10 @@
   align-items: center;
   justify-content: center;
 
+  .section-pixel-divider {
+    background: url('../../assets/overlays/pixel_overlay_six.svg') repeat-x;
+  }
+
   .core-container {
     width: 100%;
     height: 100%;

@@ -2,7 +2,6 @@ import React from 'react';
 
 import './styles.scss';
 
-import pixel_overlay_three from '../../assets/overlays/pixel_overlay_three.svg';
 import ghst_token_logo from '../../assets/logos/ghst_token_logo.svg';
 import fire_icon from '../../assets/icons/fire_icon.svg';
 import pink_arrow_image from '../../assets/images/pink_arrow_image.png';
@@ -40,11 +39,7 @@ const lines = [
 const Index = () => {
   return (
     <section id='three'>
-      <img
-        className='section-pixel-divider'
-        src={pixel_overlay_three}
-        alt='pixel group'
-      />
+      <div className='section-pixel-divider'></div>
 
       <p id='section-title'>The GHST Token</p>
       {lines.map((item, index) => {

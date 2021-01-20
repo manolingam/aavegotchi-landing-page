@@ -2,17 +2,22 @@
 @import '../../utils/constants.scss';
 
 #one {
+  height: 80vh;
   width: 100%;
   background: linear-gradient(180deg, #b283e1 0%, #f5d7ff 100%);
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: space-evenly;
+  justify-content: center;
+
+  .section-pixel-divider {
+    background: url('../../assets/overlays/pixel_overlay_one.svg') repeat-x;
+  }
 
   #gotchigang-image {
     width: 450px;
     position: relative;
-    margin: 5rem 3rem 3rem 3rem;
+    margin: 3rem;
   }
 
   .right-container {
@@ -22,7 +27,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 5rem 3rem 3rem 3rem;
+    margin: 3rem;
     .slogan-container {
       width: 100%;
       font-family: $press-start-font;
@@ -51,6 +56,7 @@
 
     .right-bottom-container {
       width: 100%;
+      height: 70px;
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -59,19 +65,38 @@
       #rainbow-text-image {
         margin-right: 2rem;
       }
+      // button {
+      //   padding: 0.8rem 1rem 0.8rem 1rem;
+      //   @include pixel-borders(
+      //     $corner-size: 1,
+      //     $border-size: 4px,
+      //     $border-color: #000,
+      //     $border-inset-color: false
+      //   );
+      //   background: #f0d129;
+      //   font-family: $press-start-font;
+      //   font-size: 18px;
+      //   color: white;
+      //   -webkit-text-stroke: 1.5px black;
+      // }
       button {
-        padding: 0.8rem 1rem 0.8rem 1rem;
-        @include pixel-borders(
-          $corner-size: 1,
-          $border-size: 4px,
-          $border-color: #000,
-          $border-inset-color: false
-        );
-        background: #f0d129;
+        border: 2px solid #a18a04;
+        margin: 2rem 2rem;
         font-family: $press-start-font;
-        font-size: 18px;
+        background: linear-gradient(180deg, #f3e597 0%, #f0d129 100%);
+        padding: 0.8rem 1rem 0.8rem 1rem;
         color: white;
         -webkit-text-stroke: 1.5px black;
+        border-radius: 6px;
+        border-bottom: 5px solid #a18a04;
+        transition: all 0.1s ease-in-out;
+        font-size: 18px;
+      }
+
+      button:hover {
+        border-bottom-width: 2px;
+        margin-top: 2.2rem;
+        cursor: pointer;
       }
     }
 

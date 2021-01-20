@@ -18,13 +18,16 @@
     align-items: center;
     #sub-overlay {
       width: 100%;
+      height: 75px;
       position: absolute;
       bottom: -5px;
+      background: url('../../assets/overlays/pixel_overlay_seven.svg') repeat-x;
     }
     div {
       display: flex;
       flex-direction: row;
       justify-content: center;
+      align-items: center;
     }
     h3 {
       width: 50%;
@@ -47,13 +50,32 @@
       font-family: $press-start-font;
       text-align: center;
     }
+    // button {
+    //   border: none;
+    //   width: 210px;
+    //   background: url('../../assets/buttons/remind_me_button.svg') no-repeat;
+    //   background-position: center;
+    //   background-size: contain;
+    //   margin-left: 1rem;
+    // }
     button {
-      border: none;
       width: 210px;
-      background: url('../../assets/buttons/remind_me_button.svg') no-repeat;
-      background-position: center;
-      background-size: contain;
+      border: 2px solid #0c806a;
       margin-left: 1rem;
+      font-family: $press-start-font;
+      letter-spacing: 1.2px;
+      background: #72ebc7;
+      padding: 1rem;
+      color: black;
+      border-bottom: 8px solid #0c806a;
+      border-radius: 6px;
+      transition: all 0.1s ease-in-out;
+      font-size: 16px;
+    }
+
+    button:hover {
+      border-bottom-width: 2px;
+      cursor: pointer;
     }
   }
 

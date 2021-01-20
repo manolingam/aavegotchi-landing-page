@@ -2,7 +2,6 @@ import React from 'react';
 
 import './styles.scss';
 
-import pixel_overlay_six from '../../assets/overlays/pixel_overlay_six.svg';
 import gotchi_image from '../../assets/images/gotchi_image.svg';
 
 const card_items = [
@@ -39,11 +38,7 @@ const card_items = [
 const Index = () => {
   return (
     <section id='six'>
-      <img
-        className='section-pixel-divider'
-        src={pixel_overlay_six}
-        alt='pixel group'
-      />
+      <div className='section-pixel-divider'></div>
       <div className='core-container'>
         <div className='top-container'>
           <img src={gotchi_image} alt='gotchi' width='100px' />

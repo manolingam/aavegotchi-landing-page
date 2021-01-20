@@ -2,13 +2,17 @@
 @import '../../utils/constants.scss';
 
 header {
-  height: 32vh;
+  height: 24vh;
   position: relative;
   background-color: white;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
+  #header-pixel-divider {
+    width: 100%;
+    background: url('../../assets/overlays/pixel_overlay_header.svg') repeat-x;
+  }
   div {
     display: flex;
     flex-direction: row;
@@ -26,19 +30,39 @@ header {
   #header-logo {
     width: 250px;
   }
+  // button {
+  //   padding: 0.8rem 1rem 0.8rem 1rem;
+  //   margin: 2rem;
+  //   @include pixel-borders(
+  //     $corner-size: 1,
+  //     $border-size: 4px,
+  //     $border-color: #000,
+  //     $border-inset-color: false
+  //   );
+  //   background: #d500ff;
+  //   font-size: 18px;
+  //   font-family: $press-start-font;
+  //   color: white;
+  //   -webkit-text-stroke: 1.5px black;
+  // }
+
   button {
-    padding: 0.8rem 1rem 0.8rem 1rem;
-    margin: 2rem;
-    @include pixel-borders(
-      $corner-size: 1,
-      $border-size: 4px,
-      $border-color: #000,
-      $border-inset-color: false
-    );
-    background: #d500ff;
-    font-size: 18px;
+    border: 2px solid #800a97;
+    margin: 2rem 2rem;
     font-family: $press-start-font;
+    background: linear-gradient(180deg, #e7acf3 0%, #d500ff 100%);
+    padding: 0.8rem 1rem 0.8rem 1rem;
     color: white;
     -webkit-text-stroke: 1.5px black;
+    border-radius: 6px;
+    border-bottom: 5px solid #800a97;
+    transition: all 0.1s ease-in-out;
+    font-size: 18px;
+  }
+
+  button:hover {
+    border-bottom-width: 2px;
+    margin-top: 2.2rem;
+    cursor: pointer;
   }
 }

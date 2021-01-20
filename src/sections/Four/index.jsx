@@ -11,6 +11,7 @@ import powered_by_chainlink_image from '../../assets/images/powered_by_chainlink
 const Index = () => {
   return (
     <section id='four'>
+      <div className='section-pixel-divider'></div>
       <div id='core-container'>
         <h1 className='mb4'>Anatomy of a Gotchi</h1>
         <p className='mb3'>
@@ -24,7 +25,12 @@ const Index = () => {
           <div id='sub-container-left'>
             <h3 className='mb3'>Preview</h3>
             <div className='pixel-border-container'>
-              <img src={gotchi_image} alt='gotchi' />
+              <img
+                src={gotchi_image}
+                width='120px'
+                style={{ marginLeft: 'auto', marginRight: 'auto' }}
+                alt='gotchi'
+              />
               <p style={{ color: '#A0A0A0', textAlign: 'center' }}>
                 Type a name
               </p>

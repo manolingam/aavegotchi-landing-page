@@ -2,7 +2,6 @@ import React from 'react';
 
 import './styles.scss';
 
-import pixel_overlay_two from '../../assets/overlays/pixel_overlay_two.svg';
 import ghst_token_logo from '../../assets/logos/ghst_token_logo.svg';
 import portal_closed_image from '../../assets/images/portal_closed_image.svg';
 import portal_opened_image from '../../assets/images/portal_open_image.svg';
@@ -35,11 +34,7 @@ const list_items = [
 const Index = () => {
   return (
     <section id='two'>
-      <img
-        className='section-pixel-divider'
-        src={pixel_overlay_two}
-        alt='pixel group'
-      />
+      <div className='section-pixel-divider'></div>
 
       <div className='sub-container'>
         <div>

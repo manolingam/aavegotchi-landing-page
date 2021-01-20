@@ -13,7 +13,8 @@ section {
 
 .section-pixel-divider,
 #header-pixel-divider {
-  width: 100%;
+  height: 75px;
+  width: 100vw;
   position: absolute;
-  bottom: -5px;
+  bottom: -1px;
 }

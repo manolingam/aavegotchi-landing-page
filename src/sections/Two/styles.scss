@@ -1,7 +1,6 @@
 @import '../../utils/constants.scss';
 
 #two {
-  height: 120vh;
   background: linear-gradient(
     #ccffff 0%,
     #76e6ff 15%,
@@ -12,10 +11,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+
+  .section-pixel-divider {
+    background: url('../../assets/overlays/pixel_overlay_two.svg') repeat-x;
+  }
 
   .sub-container {
     width: 50%;
-    margin-top: 150px;
     background-color: white;
     font-family: $source-sans-font;
     position: relative;
@@ -23,7 +26,7 @@
       stretch;
     border-width: 30px;
     border-style: solid;
-    border-radius: 35px;
+    border-radius: 20px;
     border-image-outset: 0.2;
     h3 {
       font-family: $press-start-font;
@@ -56,7 +59,7 @@
         stretch;
       border-width: 30px;
       border-style: solid;
-      border-radius: 35px;
+      border-radius: 20px;
       border-image-outset: 0.2;
       h3 {
         margin-top: 0;

@@ -2,7 +2,6 @@ import React from 'react';
 
 import './styles.scss';
 
-import pixel_overlay_one from '../../assets/overlays/pixel_overlay_one.svg';
 import gotchigang_image from '../../assets/images/gotchigang_image.svg';
 import rainbow_text_image from '../../assets/images/rainbow_text_image.svg';
 import powered_by_aave_image from '../../assets/images/powered_by_aave_image.svg';
@@ -10,11 +9,7 @@ import powered_by_aave_image from '../../assets/images/powered_by_aave_image.svg
 const Index = () => {
   return (
     <section id='one'>
-      <img
-        className='section-pixel-divider'
-        src={pixel_overlay_one}
-        alt='pixel group'
-      />
+      <div className='section-pixel-divider'></div>
 
       <img src={gotchigang_image} alt='gotchigang' id='gotchigang-image' />
 
