@@ -26,6 +26,10 @@ header {
     p {
       color: #d500ff;
     }
+    p:hover {
+      cursor: pointer;
+      border-bottom: 5px solid #d500ff;
+    }
   }
   #header-logo {
     width: 250px;
