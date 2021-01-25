@@ -12,6 +12,7 @@ const Index = () => {
   return (
     <section id='four'>
       <div className='section-pixel-divider'></div>
+
       <div id='core-container'>
         <h1 className='mb4'>Anatomy of a Gotchi</h1>
         <p className='mb3'>
@@ -21,6 +22,7 @@ const Index = () => {
           give it a unique name. Then interact with others, play games, earn
           crypto, and level up!
         </p>
+
         <div id='sub-container'>
           <div id='sub-container-left'>
             <h3 className='mb3'>Preview</h3>
@@ -48,9 +50,11 @@ const Index = () => {
               </div>
             </div>
           </div>
+
           <div id='sub-container-right'>
             <div>
               <h3 className='mb3'>Choose an aToken</h3>
+
               <div className='pixel-border-container'>
                 <span>
                   <img src={dai_icon} alt='icon' />

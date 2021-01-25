@@ -1,13 +1,11 @@
 @import '../../utils/constants.scss';
 
 #three {
-  height: 140vh;
   background: linear-gradient(180deg, #3f0065 0%, #8c0087 100%);
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   font-family: $pixelar-font;
 
   .section-pixel-divider {
@@ -15,54 +13,40 @@
   }
 
   #section-title {
-    // font-family: $press-start-font;
     color: white;
     text-align: center;
-    // font-size: 24px;
-    font-size: 4rem;
-    margin-bottom: 1rem;
+    font-size: 50px;
+    margin-top: 50px;
+    margin-bottom: 20px;
   }
 
   .lines {
-    width: 70%;
-    // font-family: $source-sans-font;
     text-align: center;
     line-height: 28px;
     letter-spacing: 2px;
     color: white;
     margin: 0 auto 0 auto;
     text-transform: uppercase;
-    // font-size: 16px;
-    font-size: 1.5rem;
+    font-size: 20px;
   }
 
   #core-container {
-    width: 50%;
-    height: 50%;
+    width: 70%;
+    height: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     position: relative;
+    margin-top: 100px;
+    margin-bottom: 100px;
     #button-container {
       width: 100%;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      // button {
-      //   width: 200px;
-      //   padding: 1.5rem 1.5rem 40px 1.5rem;
-      //   border: none;
-      //   background: url('../../assets/buttons/pink_button.png');
-      //   background-repeat: no-repeat;
-      //   background-position: center;
-      //   background-size: contain;
-      //   font-family: $press-start-font;
-      //   color: white;
-      //   -webkit-text-stroke: 1px black;
-      //   font-size: 20px;
-      // }
+
       button {
         width: 160px;
         border: 2px solid #800a97;
@@ -87,11 +71,9 @@
 
     .info-card-text {
       background-color: white;
-      width: 320px;
+      width: 375px;
       min-height: 90px;
       position: absolute;
-      // font-family: $source-sans-font;
-      // font-size: 16px;
       font-size: 1.2rem;
       text-align: left;
       letter-spacing: 0.5px;
@@ -114,24 +96,24 @@
     }
 
     p:nth-child(2) {
-      top: 50px;
+      top: -50px;
       left: -45px;
     }
     p:nth-child(3) {
-      top: 50px;
+      top: -50px;
       right: -45px;
     }
     p:nth-child(4) {
-      bottom: 50px;
+      bottom: -50px;
       left: -45px;
     }
     p:nth-child(5) {
-      bottom: 50px;
+      bottom: -50px;
       right: -45px;
     }
 
     #ghst-token-image {
-      width: 150px;
+      width: 100px;
     }
 
     #arrow-container {
@@ -139,31 +121,31 @@
 
       #pink-arrow-right {
         position: absolute;
-        top: -64px;
-        left: 130px;
+        top: -34px;
+        left: 120px;
       }
       #pink-arrow-left {
         position: absolute;
-        top: -64px;
-        right: 130px;
+        top: -34px;
+        right: 120px;
         transform: rotateY(3.142rad);
       }
       #blue-arrow-right {
         position: absolute;
-        bottom: -55px;
-        right: -155px;
+        bottom: -20px;
+        right: -125px;
         transform: rotateY(3.142rad);
       }
       #blue-arrow-left {
         position: absolute;
-        bottom: -55px;
-        left: -155px;
+        bottom: -20px;
+        left: -125px;
       }
     }
   }
 
   #notify-container {
-    width: 60%;
+    width: 70%;
     color: black;
     background-color: white;
     border-image: url('../../assets/borders/black_box_border.png') 34 round
@@ -175,6 +157,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-bottom: 150px;
 
     #fire-icon {
       width: 50px;
@@ -187,12 +170,10 @@
     }
 
     p:nth-child(1) {
-      // font-family: $press-start-font;
       margin-bottom: 1rem;
       font-size: 1.5rem;
     }
     p:nth-child(2) {
-      // font-family: $source-sans-font;
       letter-spacing: 1.5;
       line-height: 25px;
       font-size: 1.2rem;

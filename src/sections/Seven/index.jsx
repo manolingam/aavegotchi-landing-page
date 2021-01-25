@@ -8,7 +8,7 @@ const Index = () => {
       <div id='top-container'>
         <div id='sub-overlay'></div>
         <h3>Sign up to be notified when new features are released!</h3>
-        <div>
+        <div className='input-container'>
           <input placeholder='user@email.com'></input>
           <button>Remind me</button>
         </div>

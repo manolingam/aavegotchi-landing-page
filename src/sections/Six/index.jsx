@@ -41,14 +41,14 @@ const Index = () => {
       <div className='section-pixel-divider'></div>
       <div className='core-container'>
         <div className='top-container'>
-          <img src={gotchi_image} alt='gotchi' width='100px' />
+          <img src={gotchi_image} alt='gotchi' width='75px' />
           <div>
             <h2>Welcome to the Metaverse</h2>
             <p style={{ color: '#8c20ce' }}>
               Check out what's coming out this quarter
             </p>
           </div>
-          <img src={gotchi_image} alt='gotchi' width='100px' />
+          <img src={gotchi_image} alt='gotchi' width='75px' />
         </div>
         <p id='description-text'>
           This is the Aavegotchi realm where Gotchis live, work, and play. The
@@ -59,7 +59,7 @@ const Index = () => {
           {card_items.map((item, index) => {
             return (
               <div key={index}>
-                <span className='mb3'></span>
+                <span></span>
                 <h3>{item.h3_text}</h3>
                 <p>{item.p_text}</p>
               </div>

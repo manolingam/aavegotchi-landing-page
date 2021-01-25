@@ -1,7 +1,6 @@
 @import '../../utils/constants.scss';
 
 #two {
-  height: 120vh;
   background: linear-gradient(
     #ccffff 0%,
     #76e6ff 15%,
@@ -22,22 +21,21 @@
   .sub-container {
     width: 50%;
     background-color: white;
-    // font-family: $source-sans-font;
     position: relative;
     border-image: url('../../assets/borders/black_box_border.png') 34 round
       stretch;
-    border-width: 30px;
+    border-width: 20px;
     border-style: solid;
     border-radius: 20px;
     border-image-outset: 0.2;
+    margin: 150px 0 150px 0;
     h3 {
-      // font-family: $press-start-font;
-      font-size: 2rem;
+      font-size: 1.5rem;
       color: #d500ff;
       margin-top: 1rem;
     }
     p {
-      font-size: 1.5rem;
+      font-size: 20px;
       line-height: 28px;
       letter-spacing: 1.5px;
       color: #040e23;
@@ -46,22 +44,22 @@
       display: flex;
       flex-direction: row;
       align-items: center;
-      margin: 2rem;
+      margin: 0.8rem;
       img {
         margin-left: 1rem;
         margin-right: 1rem;
-        width: 50px;
+        width: 35px;
       }
     }
 
     .overlap-container {
       position: absolute;
-      top: -115px;
+      top: -100px;
       left: -210px;
       background-color: white;
       border-image: url('../../assets/borders/black_box_border.png') 34 round
         stretch;
-      border-width: 30px;
+      border-width: 20px;
       border-style: solid;
       border-radius: 20px;
       border-image-outset: 0.2;

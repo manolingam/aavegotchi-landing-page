@@ -18,11 +18,13 @@ const Index = () => {
           <p>Make nifty friends,</p>
           <p>earn crypto loot!</p>
         </div>
+
         <p id='explainer-text'>
           Aavegotchi is a DeFi-enabled crypto collectibles game that allows
           players to create and stake NFT avatars (called <span>Gotchi</span>)
           with interest-generating tokens.
         </p>
+
         <div className='right-bottom-container'>
           <img
             src={rainbow_text_image}
@@ -31,6 +33,7 @@ const Index = () => {
           />
           <button>play</button>
         </div>
+
         <img
           src={powered_by_aave_image}
           alt='powered by aave'

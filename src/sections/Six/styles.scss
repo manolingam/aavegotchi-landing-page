@@ -1,7 +1,6 @@
 @import '../../utils/constants.scss';
 
 #six {
-  height: 180vh;
   background: url('../../assets/backgrounds/dao_background.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -24,6 +23,7 @@
     align-items: center;
     justify-content: space-evenly;
     color: #3f0065;
+    margin-top: 50px;
 
     .top-container {
       width: 100vw;
@@ -38,12 +38,11 @@
         justify-content: space-evenly;
       }
       h2 {
-        // font-family: $press-start-font;
-        font-size: 3.5rem;
+        font-size: 2.5rem;
         letter-spacing: 1.2px;
+        text-align: center;
       }
       p {
-        // font-family: $source-sans-font;
         text-align: center;
         letter-spacing: 3px;
         text-transform: uppercase;
@@ -53,21 +52,22 @@
 
     #description-text {
       width: 50%;
-      // font-family: $source-sans-font;
       letter-spacing: 3px;
-      font-size: 25px;
       text-align: center;
-      font-size: 2rem;
+      font-size: 20px;
+      margin-top: 25px;
     }
 
     .card-container {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      grid-gap: 1rem;
+      grid-gap: 0.5rem;
+      margin-bottom: 75px;
+      margin-top: 50px;
 
       div {
-        height: 325px;
-        width: 380px;
+        height: 300px;
+        width: 350px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -75,18 +75,16 @@
         padding: 2rem;
         text-align: center;
         span {
-          height: 125px;
-          width: 125px;
+          height: 75px;
+          width: 75px;
           background-color: #c4c4c4;
           border-radius: 50%;
         }
         h3 {
-          // font-family: $press-start-font;
           font-size: 1.5rem;
           letter-spacing: 1.2px;
         }
         p {
-          // font-family: $source-sans-font;
           letter-spacing: 3px;
           line-height: 1.2;
           font-size: 1.2rem;

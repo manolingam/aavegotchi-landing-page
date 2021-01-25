@@ -41,14 +41,16 @@ const Index = () => {
     <section id='three'>
       <div className='section-pixel-divider'></div>
 
-      <p id='section-title'>The GHST Token</p>
-      {lines.map((item, index) => {
-        return (
-          <p key={index} className='lines'>
-            {item}
-          </p>
-        );
-      })}
+      <div>
+        <p id='section-title'>The GHST Token</p>
+        {lines.map((item, index) => {
+          return (
+            <p key={index} className='lines'>
+              {item}
+            </p>
+          );
+        })}
+      </div>
 
       <div id='core-container'>
         <div id='button-container'>
