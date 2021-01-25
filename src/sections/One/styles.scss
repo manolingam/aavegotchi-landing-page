@@ -9,6 +9,7 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: center;
+  font-family: $pixelar-font;
 
   .section-pixel-divider {
     background: url('../../assets/overlays/pixel_overlay_one.svg') repeat-x;
@@ -30,8 +31,9 @@
     margin: 3rem;
     .slogan-container {
       width: 100%;
-      font-family: $press-start-font;
-      font-size: 28px;
+      // font-family: $press-start-font;
+      // font-size: 28px;
+      font-size: 4rem;
       line-height: 60px;
       color: #3f0065;
       p:nth-child(1) {
@@ -43,8 +45,9 @@
     }
 
     #explainer-text {
-      font-family: $source-sans-font;
-      font-size: 20px;
+      // font-family: $source-sans-font;
+      // font-size: 20px;
+      font-size: 1.5rem;
       line-height: 36px;
       letter-spacing: 2px;
       color: #3f0065;

@@ -4,6 +4,7 @@
   height: 120vh;
   display: flex;
   flex-direction: column;
+  font-family: $pixelar-font;
 
   div {
     width: 100%;
@@ -31,24 +32,27 @@
     }
     h3 {
       width: 50%;
-      font-family: $press-start-font;
+      // font-family: $press-start-font;
       color: white;
       margin-top: 120px;
       margin-bottom: 2rem;
       text-align: center;
       letter-spacing: 3px;
-      line-height: 2.4;
+      line-height: 1;
+      font-size: 3rem;
     }
     input {
       width: 400px;
       border: none;
       padding: 1.5rem;
       background-color: #9f3ddb;
+      font-size: 1.5rem;
     }
     input::placeholder {
       color: #b0b0b0;
-      font-family: $press-start-font;
+      // font-family: $press-start-font;
       text-align: center;
+      font-size: 2rem;
     }
     // button {
     //   border: none;

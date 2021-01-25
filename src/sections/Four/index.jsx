@@ -27,7 +27,7 @@ const Index = () => {
             <div className='pixel-border-container'>
               <img
                 src={gotchi_image}
-                width='120px'
+                width='100px'
                 style={{ marginLeft: 'auto', marginRight: 'auto' }}
                 alt='gotchi'
               />

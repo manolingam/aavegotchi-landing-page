@@ -7,6 +7,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-family: $pixelar-font;
 
   #secondary-bg {
     position: absolute;
@@ -26,7 +27,8 @@
       margin: auto;
       margin-bottom: 1rem;
       line-height: 28px;
-      font-size: 15px;
+      // font-size: 15px;
+      font-size: 1.5rem;
       letter-spacing: 3px;
       color: #3f0065;
     }
@@ -52,8 +54,9 @@
         border-width: 20px;
         border-style: solid;
         border-radius: 35px;
-        font-family: $press-start-font;
-        font-size: 16px;
+        // font-family: $press-start-font;
+        // font-size: 16px;
+        font-size: 1.5rem;
         text-align: center;
       }
     }
@@ -84,24 +87,25 @@
     }
 
     p {
-      font-family: 'Source Sans Pro', sans-serif;
+      // font-family: 'Source Sans Pro', sans-serif;
       letter-spacing: 2px;
       line-height: 1.3;
+      font-size: 1.2rem;
     }
 
     h2,
     span {
-      font-family: 'Press Start 2P', cursive;
+      // font-family: 'Press Start 2P', cursive;
       letter-spacing: 3px;
     }
 
     h2 {
-      font-size: 1rem;
+      font-size: 1.5rem;
       margin-bottom: 1.5rem;
     }
 
     span {
-      font-size: 0.6rem;
+      font-size: 1rem;
       text-transform: uppercase;
     }
 
