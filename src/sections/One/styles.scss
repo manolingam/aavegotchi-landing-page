@@ -65,17 +65,18 @@
         font-family: $press-start-font;
         background: linear-gradient(180deg, #f3e597 0%, #f0d129 100%);
         padding: 0.5rem 1rem;
-        color: white;
-        -webkit-text-stroke: 1.5px black;
+        color: black;
+        // -webkit-text-stroke: 1.5px black;
         border-radius: 6px;
         border-bottom: 5px solid #a18a04;
         transition: all 0.1s ease-in-out;
         font-size: 20px;
+        letter-spacing: 2px;
       }
 
       button:hover {
         border-bottom-width: 2px;
-        margin-top: 2.2rem;
+        margin-top: 3px;
         cursor: pointer;
       }
     }

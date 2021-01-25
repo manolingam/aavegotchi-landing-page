@@ -33,6 +33,7 @@ header {
     }
     p {
       color: #d500ff;
+      border-bottom: 5px solid transparent;
     }
     p:hover {
       cursor: pointer;
@@ -59,7 +60,7 @@ header {
 
   button:hover {
     border-bottom-width: 2px;
-    margin-top: 2.2rem;
+    margin-top: 3px;
     cursor: pointer;
   }
 }

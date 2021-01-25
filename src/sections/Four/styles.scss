@@ -26,6 +26,7 @@
     }
 
     #sub-container {
+      height: 575px;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -92,7 +93,7 @@
 
       button:hover {
         border-bottom-width: 2px;
-        margin-top: 2.2rem;
+        margin-top: 23px;
         cursor: pointer;
       }
 
