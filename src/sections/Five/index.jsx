@@ -11,7 +11,12 @@ const Index = () => {
     <section id='five'>
       <div id='secondary-bg'></div>
       <div className='core-container'>
-        <img src={aavegotchi_dao_logo} width='150px' alt='aavegothci dao' />
+        <img
+          src={aavegotchi_dao_logo}
+          width='150px'
+          alt='aavegothci dao'
+          id='dao-logo'
+        />
         <p id='description-text'>
           Governance for Aavegotchi will gradually become more decentralized
           through the Avagotchi DAO. This will be accomplished in three phases.

@@ -77,11 +77,9 @@
         border: 2px solid #92126c;
         border-radius: 10px;
         margin: 20px auto 0 auto;
-        font-family: $press-start-font;
         background: linear-gradient(180deg, #fc9fe0 0%, #ff50cb 100%);
         padding: 1rem;
         color: white;
-        -webkit-text-stroke: 1.5px black;
         border-bottom: 8px solid #92126c;
         transition: all 0.1s ease-in-out;
         font-size: 18px;
@@ -166,11 +164,9 @@
       margin-left: auto;
       margin-right: auto;
       border: 2px solid #a8135b;
-      font-family: $press-start-font;
       background: linear-gradient(180deg, #ffb4d8 0%, #ff50a4 100%);
       padding: 0.5rem 1rem 0.5rem 1rem;
       color: white;
-      -webkit-text-stroke: 1.5px black;
       border-radius: 6px;
       border-bottom: 8px solid #a8135b;
       transition: all 0.1s ease-in-out;
@@ -198,5 +194,209 @@
     background-blend-mode: overlay;
     background-size: 150px;
     opacity: 0.3;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #four {
+    #core-container {
+      width: 80%;
+      h1,
+      h3 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+      }
+
+      p {
+        font-size: 1rem;
+        line-height: 16px;
+        margin: 0;
+      }
+
+      #sub-container {
+        height: auto;
+        flex-direction: column;
+        margin-bottom: 10px;
+      }
+
+      #sub-container-left {
+        padding: 0;
+        margin-top: 15px;
+        width: 100%;
+        .pixel-border-container {
+          height: auto;
+          flex-direction: row;
+          align-items: center;
+          border-width: 14px;
+          padding: 15px;
+          img {
+            width: 100px;
+          }
+          div {
+            margin: 20px 0 0 0;
+            p {
+              font-size: 26px;
+            }
+            span {
+              font-size: 32px;
+            }
+          }
+        }
+      }
+
+      #sub-container-right {
+        width: 100%;
+        padding: 0;
+        margin-top: 15px;
+        .pixel-border-container {
+          border-width: 12px;
+        }
+        span {
+          img {
+            width: 50px;
+          }
+          p {
+            font-size: 28px;
+          }
+        }
+        .placeholder-container {
+          span {
+            width: 50px;
+            height: 50px;
+          }
+        }
+        button {
+          width: 200px;
+          padding: 10px;
+          margin: 15px auto 15px auto;
+          img {
+            width: 25px;
+          }
+          span {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+
+    #info-text {
+      width: 80%;
+      font-size: 16px;
+      line-height: 16px;
+      border-width: 12px;
+      margin-bottom: 50px;
+      button {
+        width: auto;
+        bottom: -75px;
+        padding: 10px;
+        font-size: 14px;
+      }
+    }
+
+    #powered_by_image {
+      margin-top: 10px;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #four {
+    #core-container {
+      width: 80%;
+      h1,
+      h3 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+      }
+
+      p {
+        font-size: 1rem;
+        line-height: 16px;
+        margin: 0;
+      }
+
+      #sub-container {
+        height: auto;
+        flex-direction: column;
+        margin-bottom: 10px;
+      }
+
+      #sub-container-left {
+        padding: 0;
+        margin-top: 15px;
+        width: 100%;
+        .pixel-border-container {
+          height: auto;
+          flex-direction: row;
+          align-items: center;
+          border-width: 14px;
+          padding: 15px;
+          img {
+            width: 50px;
+          }
+          div {
+            margin: 5px 0 0 0;
+            p {
+              font-size: 16px;
+            }
+            span {
+              font-size: 22px;
+            }
+          }
+        }
+      }
+
+      #sub-container-right {
+        width: 100%;
+        padding: 0;
+        margin-top: 15px;
+        .pixel-border-container {
+          border-width: 12px;
+        }
+        span {
+          img {
+            width: 25px;
+          }
+          p {
+            font-size: 18px;
+          }
+        }
+        .placeholder-container {
+          span {
+            width: 50px;
+            height: 50px;
+          }
+        }
+        button {
+          width: 140px;
+          padding: 10px;
+          margin: 15px auto 15px auto;
+          img {
+            width: 25px;
+          }
+          span {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+
+    #info-text {
+      width: 80%;
+      font-size: 16px;
+      line-height: 16px;
+      border-width: 12px;
+      margin-bottom: 50px;
+      button {
+        width: auto;
+        bottom: -75px;
+        padding: 10px;
+        font-size: 14px;
+      }
+    }
+
+    #powered_by_image {
+      margin-top: 10px;
+    }
   }
 }

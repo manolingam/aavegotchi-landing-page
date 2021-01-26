@@ -58,15 +58,15 @@
       width: 210px;
       border: 2px solid #0c806a;
       margin-left: 1rem;
-      font-family: $press-start-font;
+      font-family: $pixelar-font;
       letter-spacing: 1.2px;
       background: #72ebc7;
-      padding: 1rem;
+      padding: 10px;
       color: black;
       border-bottom: 8px solid #0c806a;
       border-radius: 6px;
       transition: all 0.1s ease-in-out;
-      font-size: 16px;
+      font-size: 32px;
     }
 
     button:hover {
@@ -78,5 +78,33 @@
   #bottom-container {
     height: 40%;
     background: linear-gradient(180deg, #091038 0%, #320018 100%);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #seven {
+    #top-container {
+      h3 {
+        width: 90%;
+        font-size: 22px;
+        margin-top: 25px;
+      }
+      div {
+        flex-direction: column;
+      }
+      input {
+        width: auto;
+        padding: 10px;
+        font-size: 18px;
+      }
+      input::placeholder {
+        font-size: 18px;
+      }
+      button {
+        width: auto;
+        margin: 20px 0 0 0;
+        font-size: 18px;
+      }
+    }
   }
 }

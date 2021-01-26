@@ -20,7 +20,7 @@ header {
     background: url('../../assets/overlays/pixel_overlay_header.svg') repeat-x;
   }
 
-  div {
+  .links-container {
     display: flex;
     flex-direction: row;
     font-size: 2rem;
@@ -44,23 +44,67 @@ header {
     width: 250px;
   }
 
-  button {
+  .button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  #play-button {
     border: 2px solid #800a97;
     margin-right: 2rem;
     background: linear-gradient(180deg, #e7acf3 0%, #d500ff 100%);
     padding: 0.5rem 1rem;
     color: white;
-    -webkit-text-stroke: 1.5px black;
     border-radius: 6px;
     border-bottom: 5px solid #800a97;
     transition: all 0.1s ease-in-out;
     font-size: 20px;
-    font-family: $press-start-font;
   }
 
-  button:hover {
+  #play-button:hover {
     border-bottom-width: 2px;
     margin-top: 3px;
     cursor: pointer;
+  }
+
+  #ham-lines {
+    display: none;
+    width: 50px;
+    height: 45px;
+    border: 2px solid #800a97;
+    margin-right: 10px;
+    background: linear-gradient(180deg, #e7acf3 0%, #d500ff 100%);
+    padding: 10px;
+    border-radius: 6px;
+    border-bottom: 5px solid #800a97;
+    transition: all 0.1s ease-in-out;
+  }
+  #ham-lines:hover {
+    border-bottom-width: 2px;
+    margin-top: 3px;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    .links-container {
+      display: none;
+    }
+
+    #header_logo {
+      width: 150px;
+    }
+
+    #play-button {
+      margin-right: 0.5rem;
+      padding: 5px 10px;
+    }
+
+    #ham-lines {
+      display: block;
+    }
   }
 }

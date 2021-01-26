@@ -1,8 +1,11 @@
 import React from 'react';
 
+import { Menu, MenuButton, MenuList, MenuItem } from '@chakra-ui/react';
+
 import './styles.scss';
 
 import header_logo from '../../assets/logos/header_logo.svg';
+import ham_lines_icon from '../../assets/icons/ham_lines_icon.svg';
 
 const nav_items = ['wiki', 'blog', 'governance'];
 
@@ -12,7 +15,7 @@ const Index = () => {
       <div className='inner-container'>
         <div id='header-pixel-divider'></div>
         <img src={header_logo} alt='logo' id='header_logo' />
-        <div>
+        <div className='links-container'>
           {nav_items.map((item, index) => {
             return (
               <span key={index}>
@@ -21,7 +24,19 @@ const Index = () => {
             );
           })}
         </div>
-        <button>play</button>
+        <div className='button-container'>
+          <button id='play-button'>play</button>
+          <Menu>
+            <MenuButton aria-label='Options' size='xs' variant='outline'>
+              <img src={ham_lines_icon} alt='ham-lines' id='ham-lines' />
+            </MenuButton>
+            <MenuList>
+              {nav_items.map((item, index) => {
+                return <MenuItem key={index}>{item}</MenuItem>;
+              })}
+            </MenuList>
+          </Menu>
+        </div>
       </div>
     </header>
   );

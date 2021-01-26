@@ -73,3 +73,34 @@
     }
   }
 }
+
+@media only screen and (max-width: 600px) {
+  #two {
+    .sub-container {
+      width: 70%;
+      border-width: 12px;
+      margin: 120px 0 120px 0;
+
+      .list {
+        margin: 15px 10px 10px 0;
+        img {
+          width: 25px;
+          margin: 0 15px 0 10px;
+        }
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 1px;
+      }
+
+      .overlap-container {
+        border-width: 12px;
+        top: -75px;
+        left: -50px;
+        width: 225px;
+      }
+    }
+  }
+}

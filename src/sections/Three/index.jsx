@@ -77,6 +77,14 @@ const Index = () => {
           );
         })}
       </div>
+
+      <div className='optional-container'>
+        <button>buy GHST</button>
+        <button>earn GHST</button>
+        <button>spend GHST</button>
+        <button>stake GHST</button>
+      </div>
+
       <div id='notify-container'>
         <img src={fire_icon} alt='fire icon' id='fire-icon' />
         <div className='container-text'>

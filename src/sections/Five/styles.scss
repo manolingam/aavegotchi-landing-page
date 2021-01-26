@@ -22,6 +22,10 @@
     text-align: center;
     margin-top: 50px;
 
+    #dao-logo {
+      margin: 0 auto 0 auto;
+    }
+
     #description-text {
       width: 70%;
       margin: auto;
@@ -46,7 +50,7 @@
       h1 {
         min-width: 100px;
         position: absolute;
-        top: 0;
+        top: 10px;
         right: 10px;
         border-image: url('../../assets/borders/two_pixel_border.png') 42 round
           stretch;
@@ -116,11 +120,9 @@
         bottom: -50px;
         left: 3%;
         border: 2px solid #800a97;
-        font-family: $press-start-font;
         background: linear-gradient(180deg, #e7acf3 0%, #d500ff 100%);
         padding: 0.5rem 1rem 0.5rem 1rem;
         color: white;
-        -webkit-text-stroke: 1.5px black;
         border-radius: 6px;
         border-bottom: 8px solid #800a97;
         transition: all 0.1s ease-in-out;
@@ -132,6 +134,77 @@
         border-bottom-width: 2px;
         margin-top: 2.2rem;
         cursor: pointer;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #five {
+    .core-container {
+      width: 80%;
+
+      #dao-logo {
+        width: 100px;
+        margin: 0 auto 0 auto;
+      }
+
+      .button-container {
+        button {
+          bottom: -40px;
+        }
+      }
+
+      #description-text {
+        width: 90%;
+        font-size: 16px;
+        line-height: 16px;
+        line-height: 20px;
+        letter-spacing: 1px;
+      }
+
+      .card-container {
+        height: auto;
+        flex-direction: column;
+        border-right: 5px solid #9f3ddb;
+        border-left: 5px solid #9f3ddb;
+        margin-bottom: 20px;
+        img {
+          width: 50px;
+        }
+        h1 {
+          border-width: 10px;
+          font-size: 14px;
+          min-width: auto;
+        }
+      }
+
+      .card-container-one {
+        #violet-arrow-image {
+          display: none;
+          // top: 325px;
+          // width: 90px;
+        }
+      }
+
+      .card-container-two {
+        #violet-arrow-image {
+          display: none;
+          // top: 306px;
+          // width: 90px;
+        }
+      }
+
+      .button-container {
+        margin-bottom: 75px;
+      }
+
+      h2 {
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 16px;
       }
     }
   }

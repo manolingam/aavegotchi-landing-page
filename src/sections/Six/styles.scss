@@ -93,3 +93,46 @@
     }
   }
 }
+
+@media only screen and (max-width: 600px) {
+  #six {
+    .core-container {
+      .top-container {
+        width: 90%;
+        img {
+          width: 40px;
+        }
+        h2 {
+          font-size: 20px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+      #description-text {
+        width: 90%;
+        font-size: 18px;
+        letter-spacing: 1px;
+      }
+      .card-container {
+        margin: 50px 0 100px 0;
+        grid-template-columns: 1fr;
+        div {
+          width: auto;
+          height: 250px;
+          padding: 10px 2rem;
+          span {
+            height: 100px;
+            width: 100px;
+          }
+          h3 {
+            font-size: 20px;
+          }
+          p {
+            letter-spacing: 1px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -27,26 +27,31 @@ const Index = () => {
           <div id='sub-container-left'>
             <h3 className='mb3'>Preview</h3>
             <div className='pixel-border-container'>
-              <img
-                src={gotchi_image}
-                width='100px'
-                style={{ marginLeft: 'auto', marginRight: 'auto' }}
-                alt='gotchi'
-              />
-              <p style={{ color: '#A0A0A0', textAlign: 'center' }}>
-                Type a name
-              </p>
               <div>
-                <p>Spirit Force:</p>
-                <span style={{ color: '#EFB846' }}>aDAI</span>
+                <img
+                  src={gotchi_image}
+                  width='100px'
+                  style={{ marginLeft: 'auto', marginRight: 'auto' }}
+                  alt='gotchi'
+                />
+                <p style={{ color: '#A0A0A0', textAlign: 'center' }}>
+                  Type a name
+                </p>
               </div>
+
               <div>
-                <p>Aave APY:</p>
-                <span style={{ color: '#BD00E0' }}>5.56%</span>
-              </div>
-              <div>
-                <p>Rarity Score:</p>
-                <span style={{ color: '#BD00E0' }}>85</span>
+                <div>
+                  <p>Spirit Force:</p>
+                  <span style={{ color: '#EFB846' }}>aDAI</span>
+                </div>
+                <div>
+                  <p>Aave APY:</p>
+                  <span style={{ color: '#BD00E0' }}>5.56%</span>
+                </div>
+                <div>
+                  <p>Rarity Score:</p>
+                  <span style={{ color: '#BD00E0' }}>85</span>
+                </div>
               </div>
             </div>
           </div>
