@@ -5,89 +5,95 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-family: $pixelar-font;
 
   .section-pixel-divider {
     background: url('../../assets/overlays/pixel_overlay_six.svg') repeat-x;
   }
 
-  .core-container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    color: #3f0065;
-    margin-top: 50px;
-
-    .top-container {
-      width: 100vw;
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    .core-container {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       align-items: center;
-      justify-content: space-evenly;
-      div {
+      justify-content: center;
+      .inner-core-container {
+        width: 100%;
         height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-      }
-      h2 {
-        font-size: 2.5rem;
-        letter-spacing: 1.2px;
-        text-align: center;
-      }
-      p {
-        text-align: center;
-        letter-spacing: 3px;
-        text-transform: uppercase;
-        font-size: 1.5rem;
-      }
-    }
-
-    #description-text {
-      width: 50%;
-      letter-spacing: 3px;
-      text-align: center;
-      font-size: 20px;
-      margin-top: 25px;
-    }
-
-    .card-container {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-gap: 0.5rem;
-      margin-bottom: 75px;
-      margin-top: 50px;
-
-      div {
-        height: 300px;
-        width: 350px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
-        padding: 2rem;
-        text-align: center;
-        span {
-          height: 75px;
-          width: 75px;
-          background-color: #c4c4c4;
-          border-radius: 50%;
+        color: #3f0065;
+        margin-top: 50px;
+
+        .top-container {
+          width: 100vw;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-evenly;
+          div {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+          }
+          h2 {
+            font-size: 2.5rem;
+            letter-spacing: 1.2px;
+            text-align: center;
+          }
+          p {
+            text-align: center;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+          }
         }
-        h3 {
-          font-size: 1.5rem;
-          letter-spacing: 1.2px;
-        }
-        p {
+
+        #description-text {
+          width: 50%;
           letter-spacing: 3px;
-          line-height: 1.2;
-          font-size: 1.2rem;
+          text-align: center;
+          font-size: 20px;
+          margin-top: 25px;
+        }
+
+        .card-container {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-gap: 0.5rem;
+          margin-bottom: 75px;
+          margin-top: 50px;
+
+          div {
+            height: 300px;
+            width: 350px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            padding: 2rem;
+            text-align: center;
+            span {
+              height: 75px;
+              width: 75px;
+              background-color: #c4c4c4;
+              border-radius: 50%;
+            }
+            h3 {
+              font-size: 1.5rem;
+              letter-spacing: 1.2px;
+            }
+            p {
+              letter-spacing: 3px;
+              line-height: 1.2;
+              font-size: 1.2rem;
+            }
+          }
         }
       }
     }
@@ -96,40 +102,92 @@
 
 @media only screen and (max-width: 600px) {
   #six {
-    .core-container {
-      .top-container {
-        width: 90%;
-        img {
-          width: 40px;
-        }
-        h2 {
-          font-size: 20px;
-        }
-        p {
-          font-size: 16px;
-        }
-      }
-      #description-text {
-        width: 90%;
-        font-size: 18px;
-        letter-spacing: 1px;
-      }
-      .card-container {
-        margin: 50px 0 100px 0;
-        grid-template-columns: 1fr;
-        div {
-          width: auto;
-          height: 250px;
-          padding: 10px 2rem;
-          span {
-            height: 100px;
-            width: 100px;
+    .grid-container {
+      .core-container {
+        .inner-core-container {
+          .top-container {
+            width: 100%;
+            img {
+              width: 35px;
+            }
+            h2 {
+              font-size: 28px;
+            }
+            p {
+              font-size: 18px;
+            }
           }
-          h3 {
+          #description-text {
+            width: 90%;
+            font-size: 24px;
+            letter-spacing: 1px;
+          }
+          .card-container {
+            margin: 50px 0 100px 0;
+            grid-template-columns: 1fr;
+            div {
+              width: auto;
+              height: 250px;
+              padding: 10px 2rem;
+              span {
+                height: 100px;
+                width: 100px;
+              }
+              h3 {
+                font-size: 28px;
+              }
+              p {
+                letter-spacing: 1px;
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #six {
+    .grid-container {
+      .core-container {
+        .inner-core-container {
+          p {
+            font-size: 17px;
+          }
+          .top-container {
+            h2 {
+              font-size: 24px;
+              line-height: normal;
+              margin-bottom: 5px;
+            }
+            p {
+              font-size: 16px;
+              line-height: normal;
+            }
+          }
+
+          #description-text {
             font-size: 20px;
           }
-          p {
-            letter-spacing: 1px;
+
+          .card-container {
+            margin: 10px 0 100px 0;
+
+            div {
+              span {
+                height: 75px;
+                width: 75px;
+              }
+              h3 {
+                font-size: 22px;
+                line-height: normal;
+              }
+              p {
+                font-size: 17px;
+              }
+            }
           }
         }
       }

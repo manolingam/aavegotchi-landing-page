@@ -2,10 +2,6 @@
 
 #five {
   background: linear-gradient(180deg, #efd7fe 0%, #b880ff 100%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-family: $pixelar-font;
 
   #secondary-bg {
@@ -17,123 +13,134 @@
     opacity: 0.3;
   }
 
-  .core-container {
-    width: 70%;
-    text-align: center;
-    margin-top: 50px;
-
-    #dao-logo {
-      margin: 0 auto 0 auto;
-    }
-
-    #description-text {
-      width: 70%;
-      margin: auto;
-      margin-bottom: 25px;
-      line-height: 28px;
-      font-size: 1.5rem;
-      letter-spacing: 3px;
-      color: #3f0065;
-    }
-    .card-container {
-      height: 200px;
-      background-color: white;
-      margin-bottom: 6rem;
-      padding: 1rem;
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    .core-container {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       align-items: center;
-      border-right: 10px solid #9f3ddb;
-      border-left: 10px solid #9f3ddb;
-      color: #3f0065;
-      position: relative;
-      h1 {
-        min-width: 100px;
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        border-image: url('../../assets/borders/two_pixel_border.png') 42 round
-          stretch;
-        border-width: 15px;
-        border-style: solid;
-        border-radius: 35px;
-        font-size: 1.5rem;
+      justify-content: center;
+
+      .inner-core-container {
+        width: 70%;
         text-align: center;
-      }
-      img {
-        margin-right: 1rem;
-      }
-    }
+        margin-top: 50px;
 
-    .card-container-one {
-      position: relative;
-      #violet-arrow-image {
-        position: absolute;
-        top: 200px;
-        left: 40%;
-        transform: translate(-50%, -50%);
-        transform: rotateY(3.142rad);
-      }
-    }
+        #dao-logo {
+          margin: 0 auto 0 auto;
+        }
 
-    .card-container-two {
-      position: relative;
-      #violet-arrow-image {
-        position: absolute;
-        top: 240px;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-    }
+        #description-text {
+          width: 70%;
+          margin: auto;
+          margin-bottom: 25px;
+          line-height: 28px;
+          font-size: 1.5rem;
+          letter-spacing: 3px;
+          color: #3f0065;
+        }
+        .card-container {
+          height: 200px;
+          background-color: white;
+          margin-bottom: 6rem;
+          padding: 1rem;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          border-right: 10px solid #9f3ddb;
+          border-left: 10px solid #9f3ddb;
+          color: #3f0065;
+          position: relative;
+          h1 {
+            min-width: 100px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            border-image: url('../../assets/borders/two_pixel_border.png') 42
+              round stretch;
+            border-width: 15px;
+            border-style: solid;
+            border-radius: 35px;
+            font-size: 1.5rem;
+            text-align: center;
+          }
+          img {
+            margin-right: 1rem;
+          }
+        }
 
-    p {
-      letter-spacing: 2px;
-      line-height: 1.3;
-      font-size: 1.2rem;
-    }
+        .card-container-one {
+          position: relative;
+          #violet-arrow-image {
+            position: absolute;
+            top: 200px;
+            left: 40%;
+            transform: translate(-50%, -50%);
+            transform: rotateY(3.142rad);
+          }
+        }
 
-    h2,
-    span {
-      letter-spacing: 3px;
-    }
+        .card-container-two {
+          position: relative;
+          #violet-arrow-image {
+            position: absolute;
+            top: 240px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
 
-    h2 {
-      font-size: 1.5rem;
-      margin-bottom: 1.5rem;
-    }
+        p {
+          letter-spacing: 2px;
+          line-height: 1.3;
+          font-size: 1.2rem;
+        }
 
-    span {
-      font-size: 1rem;
-      text-transform: uppercase;
-    }
+        h2,
+        span {
+          letter-spacing: 3px;
+        }
 
-    div {
-      text-align: left;
-    }
+        h2 {
+          font-size: 1.5rem;
+          margin-bottom: 1.5rem;
+        }
 
-    .button-container {
-      position: relative;
+        span {
+          font-size: 1rem;
+          text-transform: uppercase;
+        }
 
-      button {
-        width: 115px;
-        position: absolute;
-        bottom: -30px;
-        left: 3%;
-        border: 2px solid #800a97;
-        background: linear-gradient(180deg, #e7acf3 0%, #d500ff 100%);
-        padding: 0.5rem 1rem 0.5rem 1rem;
-        color: white;
-        border-radius: 6px;
-        border-bottom: 8px solid #800a97;
-        transition: all 0.1s ease-in-out;
-        font-size: 28px;
-        line-height: 1.3;
-      }
+        div {
+          text-align: left;
+        }
 
-      button:hover {
-        border-bottom-width: 2px;
-        margin-top: 2.2rem;
-        cursor: pointer;
+        .button-container {
+          position: relative;
+
+          button {
+            width: 115px;
+            position: absolute;
+            bottom: -38px;
+            left: 5px;
+            border: 2px solid #800a97;
+            background: linear-gradient(180deg, #e7acf3 0%, #d500ff 100%);
+            padding: 0.5rem 1rem 0.5rem 1rem;
+            color: white;
+            border-radius: 6px;
+            border-bottom: 8px solid #800a97;
+            transition: all 0.1s ease-in-out;
+            font-size: 28px;
+            line-height: 1.3;
+          }
+
+          button:hover {
+            border-bottom-width: 2px;
+            margin-top: 2.2rem;
+            cursor: pointer;
+          }
+        }
       }
     }
   }
@@ -141,71 +148,81 @@
 
 @media only screen and (max-width: 600px) {
   #five {
-    .core-container {
-      width: 80%;
+    .grid-container {
+      .core-container {
+        .inner-core-container {
+          width: 100%;
 
-      #dao-logo {
-        width: 100px;
-        margin: 0 auto 0 auto;
-      }
+          #dao-logo {
+            width: 100px;
+            margin: 0 auto 15px auto;
+          }
 
-      .button-container {
-        button {
-          bottom: -40px;
-          font-size: 18px;
+          .button-container {
+            button {
+              bottom: -40px;
+              font-size: 22px;
+              letter-spacing: 1.1px;
+            }
+          }
+
+          #description-text {
+            width: 90%;
+            font-size: 22px;
+            line-height: 18px;
+            line-height: 20px;
+            letter-spacing: 1px;
+          }
+
+          .card-container {
+            height: auto;
+            flex-direction: column;
+            border-right: 5px solid #9f3ddb;
+            border-left: 5px solid #9f3ddb;
+            margin-bottom: 20px;
+            img {
+              margin-right: auto;
+              margin-bottom: 10px;
+              width: 50px;
+            }
+            h1 {
+              border-width: 10px;
+              font-size: 18px;
+              min-width: 75px;
+            }
+          }
+
+          .card-container-one {
+            #violet-arrow-image {
+              display: none;
+              // top: 325px;
+              // width: 90px;
+            }
+          }
+
+          .card-container-two {
+            #violet-arrow-image {
+              display: none;
+              // top: 306px;
+              // width: 90px;
+            }
+          }
+
+          .button-container {
+            margin-bottom: 75px;
+            padding-bottom: 25px;
+          }
+
+          h2 {
+            margin-bottom: 10px;
+          }
+
+          p {
+            font-size: 18px;
+            line-height: normal;
+            letter-spacing: 1.1px;
+          }
         }
-      }
-
-      #description-text {
-        width: 90%;
-        font-size: 16px;
-        line-height: 16px;
-        line-height: 20px;
-        letter-spacing: 1px;
-      }
-
-      .card-container {
-        height: auto;
-        flex-direction: column;
-        border-right: 5px solid #9f3ddb;
-        border-left: 5px solid #9f3ddb;
-        margin-bottom: 20px;
-        img {
-          width: 50px;
-        }
-        h1 {
-          border-width: 10px;
-          font-size: 14px;
-          min-width: auto;
-        }
-      }
-
-      .card-container-one {
-        #violet-arrow-image {
-          display: none;
-          // top: 325px;
-          // width: 90px;
-        }
-      }
-
-      .card-container-two {
-        #violet-arrow-image {
-          display: none;
-          // top: 306px;
-          // width: 90px;
-        }
-      }
-
-      .button-container {
-        margin-bottom: 75px;
-      }
-
-      h2 {
-        margin-bottom: 10px;
-      }
-
-      p {
-        font-size: 16px;
       }
     }
   }

@@ -36,30 +36,36 @@ const Index = () => {
     <section id='two'>
       <div className='section-pixel-divider'></div>
 
-      <div className='sub-container'>
-        <div>
-          <h3>The Portal</h3>
-          <p style={{ marginTop: '.3rem' }}>
-            How do you bring your Gotchi from the Nether realm to your screen?
-            Through a Portal, of course!
-          </p>
-        </div>
-
-        {list_items.map((item, index) => {
-          return (
-            <div className='list' key={index}>
-              <img src={item.image} alt={item.image_alt} />
-              <p>{item.text}</p>
+      <div className='grid-container'>
+        <div></div>
+        <div className='core-container'>
+          <div className='sub-container'>
+            <div>
+              <h3>The Portal</h3>
+              <p>
+                How do you bring your Gotchi from the Nether realm to your
+                screen? Through a Portal, of course!
+              </p>
             </div>
-          );
-        })}
 
-        <div className='overlap-container'>
-          <h3>How to play</h3>
-          <p>
-            Claim your Gotchi by summoning a portal and staking Spirit Force
-          </p>
+            {list_items.map((item, index) => {
+              return (
+                <div className='list' key={index}>
+                  <img src={item.image} alt={item.image_alt} />
+                  <p>{item.text}</p>
+                </div>
+              );
+            })}
+
+            <div className='overlap-container'>
+              <h3>How to play</h3>
+              <p>
+                Claim your Gotchi by summoning a portal and staking Spirit Force
+              </p>
+            </div>
+          </div>
         </div>
+        <div></div>
       </div>
     </section>
   );

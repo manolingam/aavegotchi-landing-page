@@ -8,67 +8,74 @@
     #3576f4 70%,
     #391ee0 100%
   );
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-family: $pixelar-font;
 
   .section-pixel-divider {
     background: url('../../assets/overlays/pixel_overlay_two.svg') repeat-x;
   }
 
-  .sub-container {
-    width: 50%;
-    background-color: white;
-    position: relative;
-    border-image: url('../../assets/borders/black_box_border.png') 34 round
-      stretch;
-    border-width: 20px;
-    border-style: solid;
-    border-radius: 20px;
-    border-image-outset: 0.2;
-    margin: 150px 0 150px 0;
-    h3 {
-      font-size: 1.5rem;
-      color: #d500ff;
-      margin-top: 1rem;
-    }
-    p {
-      font-size: 20px;
-      line-height: 28px;
-      letter-spacing: 1.5px;
-      color: #040e23;
-    }
-    .list {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    .core-container {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       align-items: center;
-      margin: 0.8rem;
-      img {
-        margin-left: 1rem;
-        margin-right: 1rem;
-        width: 35px;
-      }
-    }
+      justify-content: center;
 
-    .overlap-container {
-      position: absolute;
-      top: -100px;
-      left: -210px;
-      background-color: white;
-      border-image: url('../../assets/borders/black_box_border.png') 34 round
-        stretch;
-      border-width: 20px;
-      border-style: solid;
-      border-radius: 20px;
-      border-image-outset: 0.2;
-      h3 {
-        margin-top: 0;
-      }
-      p {
-        color: #5f0870;
-        margin-top: 0.3rem;
+      .sub-container {
+        width: 50%;
+        background-color: white;
+        position: relative;
+        border-image: url('../../assets/borders/black_box_border.png') 34 round
+          stretch;
+        border-width: 20px;
+        border-style: solid;
+        border-radius: 20px;
+        border-image-outset: 0.2;
+        margin: 150px 0 150px 0;
+        h3 {
+          font-size: 28px;
+          color: #d500ff;
+          margin-top: 25px;
+        }
+        p {
+          font-size: 20px;
+          line-height: 28px;
+          letter-spacing: 1.5px;
+          color: #040e23;
+        }
+        .list {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          margin: 0.8rem;
+          img {
+            margin-left: 1rem;
+            margin-right: 1rem;
+            width: 35px;
+          }
+        }
+
+        .overlap-container {
+          position: absolute;
+          top: -100px;
+          left: -210px;
+          background-color: white;
+          border-image: url('../../assets/borders/black_box_border.png') 34
+            round stretch;
+          border-width: 20px;
+          border-style: solid;
+          border-radius: 20px;
+          border-image-outset: 0.2;
+          h3 {
+            margin-top: 0;
+          }
+          p {
+            color: #5f0870;
+            margin-top: 0.3rem;
+          }
+        }
       }
     }
   }
@@ -76,30 +83,66 @@
 
 @media only screen and (max-width: 600px) {
   #two {
-    .sub-container {
-      width: 70%;
-      border-width: 12px;
-      margin: 120px 0 120px 0;
+    .grid-container {
+      .core-container {
+        .sub-container {
+          width: 90%;
+          border-width: 12px;
+          margin: 120px 0 120px 0;
 
-      .list {
-        margin: 15px 10px 10px 0;
-        img {
-          width: 25px;
-          margin: 0 15px 0 10px;
+          .list {
+            margin: 15px 10px 10px 0;
+            img {
+              width: 25px;
+              margin: 0 15px 0 10px;
+            }
+          }
+
+          h3 {
+            margin-top: 30px;
+          }
+
+          p {
+            font-size: 18px;
+            line-height: 16px;
+            letter-spacing: 1px;
+          }
+
+          .overlap-container {
+            border-width: 12px;
+            top: -75px;
+            left: -50px;
+            width: 325px;
+            p {
+              margin-top: 0;
+            }
+          }
         }
       }
+    }
+  }
+}
 
-      p {
-        font-size: 14px;
-        line-height: 16px;
-        letter-spacing: 1px;
-      }
+@media only screen and (max-width: 400px) {
+  #two {
+    .grid-container {
+      .core-container {
+        .sub-container {
+          h3 {
+            margin-top: 20px;
+            font-size: 22px;
+          }
 
-      .overlap-container {
-        border-width: 12px;
-        top: -75px;
-        left: -50px;
-        width: 225px;
+          p {
+            font-size: 16px;
+          }
+
+          .overlap-container {
+            top: -85px;
+            left: -40px;
+            width: 225px;
+          }
+        }
       }
     }
   }

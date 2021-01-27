@@ -5,165 +5,175 @@
   height: 100%;
   width: 100%;
   background: linear-gradient(180deg, #b283e1 0%, #f5d7ff 100%);
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-evenly;
-  font-family: $pixelar-font;
 
   .section-pixel-divider {
     background: url('../../assets/overlays/pixel_overlay_one.svg') repeat-x;
   }
 
-  #gotchigang-image {
-    width: 400px;
-    margin-top: 100px;
-  }
-
-  .right-container {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    margin-top: 100px;
-
-    .slogan-container {
-      font-size: 4rem;
-      line-height: 60px;
-      color: #3f0065;
-      margin-bottom: 50px;
-      p:nth-child(1) {
-        text-align: left;
-      }
-      p:nth-child(2) {
-        text-align: right;
-      }
-    }
-
-    #explainer-text {
-      font-size: 1.5rem;
-      line-height: 36px;
-      letter-spacing: 2px;
-      color: #3f0065;
-      span {
-        color: #bd00e0;
-        text-decoration: underline;
-      }
-    }
-
-    .right-bottom-container {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    .core-container {
       display: flex;
       flex-direction: row;
-      align-items: center;
-      justify-content: flex-end;
-      margin-top: 1rem;
-      #rainbow-text-image {
-        margin-right: 2rem;
+      align-items: flex-start;
+      justify-content: space-evenly;
+      font-family: $pixelar-font;
+
+      #gotchigang-image {
+        width: 400px;
+        margin-top: 100px;
       }
 
-      button {
-        border: 2px solid #a18a04;
-        background: linear-gradient(180deg, #f3e597 0%, #f0d129 100%);
-        padding: 0.5rem 1rem;
-        color: black;
-        border-radius: 6px;
-        border-bottom: 5px solid #a18a04;
-        transition: all 0.1s ease-in-out;
-        font-size: 28px;
-        letter-spacing: 2px;
-      }
+      .right-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+        margin-left: 50px;
 
-      button:hover {
-        border-bottom-width: 2px;
-        margin-top: 3px;
-        cursor: pointer;
-      }
-    }
+        .slogan-container {
+          font-size: 4rem;
+          line-height: 60px;
+          color: #3f0065;
+          margin-bottom: 50px;
+          p:nth-child(1) {
+            text-align: left;
+          }
+          p:nth-child(2) {
+            text-align: right;
+          }
+        }
 
-    #powered-by-aave-image {
-      margin-right: auto;
+        #explainer-text {
+          font-size: 1.5rem;
+          line-height: 36px;
+          letter-spacing: 2px;
+          color: #3f0065;
+          span {
+            color: #bd00e0;
+            text-decoration: underline;
+          }
+        }
+
+        .right-bottom-container {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: flex-end;
+          margin-top: 1rem;
+          #rainbow-text-image {
+            margin-right: 2rem;
+          }
+
+          button {
+            border: 2px solid #a18a04;
+            background: linear-gradient(180deg, #f3e597 0%, #f0d129 100%);
+            padding: 0.5rem 1rem;
+            color: black;
+            border-radius: 6px;
+            border-bottom: 5px solid #a18a04;
+            transition: all 0.1s ease-in-out;
+            font-size: 28px;
+            letter-spacing: 2px;
+            line-height: normal;
+          }
+
+          button:hover {
+            border-bottom-width: 2px;
+            margin-top: 3px;
+            cursor: pointer;
+          }
+        }
+
+        #powered-by-aave-image {
+          margin-right: auto;
+        }
+      }
     }
   }
 }
 
 @media only screen and (max-width: 600px) {
   #one {
-    flex-direction: column;
-    justify-content: flex-start;
+    .grid-container {
+      .core-container {
+        flex-direction: column;
+        justify-content: flex-start;
+        .right-container {
+          width: 100%;
+          margin: 0;
 
-    .right-container {
-      width: 100%;
-      margin: 0;
+          .slogan-container {
+            width: 100%;
+            font-size: 2.5rem;
+            margin: 15px auto 10px auto;
+            line-height: 36px;
+          }
 
-      .slogan-container {
-        width: 80%;
-        font-size: 2.5rem;
-        margin: 15px auto 10px auto;
-        line-height: 30px;
-      }
+          #explainer-text {
+            font-size: 1.5rem;
+            line-height: 24px;
+            letter-spacing: 1px;
+          }
 
-      #explainer-text {
-        font-size: 1.5rem;
-        line-height: 18px;
-        letter-spacing: 1px;
-        margin: 0 15px 0 15px;
-      }
+          .right-bottom-container {
+            justify-content: flex-end;
+            #rainbow-text-image {
+              width: 250px;
+            }
 
-      .right-bottom-container {
-        justify-content: space-evenly;
-        #rainbow-text-image {
+            button {
+              font-size: 20px;
+            }
+          }
+
+          #powered-by-aave-image {
+            margin: 10px auto 0 auto;
+          }
+        }
+
+        #gotchigang-image {
           width: 250px;
-        }
-
-        button {
-          font-size: 20px;
+          margin: 35px auto 25px auto;
         }
       }
-
-      #powered-by-aave-image {
-        width: 70%;
-        margin: 10px auto 0 auto;
-      }
-    }
-
-    #gotchigang-image {
-      width: 300px;
-      margin: 35px auto 25px auto;
     }
   }
 }
 
 @media only screen and (max-width: 400px) {
   #one {
-    .right-container {
-      .slogan-container {
-        width: 80%;
-        margin: 15px auto 20px auto;
-        font-size: 1.8rem;
-      }
+    .grid-container {
+      .core-container {
+        .right-container {
+          .slogan-container {
+            font-size: 28px;
+          }
 
-      #explainer-text {
-        font-size: 18px;
-      }
+          #explainer-text {
+            font-size: 18px;
+          }
 
-      .right-bottom-container {
-        justify-content: space-evenly;
-        #rainbow-text-image {
-          width: 150px;
+          .right-bottom-container {
+            #rainbow-text-image {
+              width: 125px;
+            }
+
+            button {
+              font-size: 18px;
+            }
+          }
+
+          #powered-by-aave-image {
+            margin: 10px auto 0 auto;
+          }
         }
 
-        button {
-          font-size: 16px;
+        #gotchigang-image {
+          width: 160px;
+          margin: 25px auto 0 auto;
         }
       }
-
-      #powered-by-aave-image {
-        width: 70%;
-        margin: 10px auto 0 auto;
-      }
-    }
-
-    #gotchigang-image {
-      width: 225px;
     }
   }
 }
