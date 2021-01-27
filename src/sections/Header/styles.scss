@@ -2,7 +2,6 @@
 @import '../../utils/constants.scss';
 
 header {
-  height: 24vh;
   position: relative;
   background-color: white;
   font-family: $pixelar-font;
@@ -21,6 +20,7 @@ header {
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
+      margin-bottom: 50px;
 
       .links-container {
         display: flex;
@@ -94,9 +94,9 @@ header {
 
 @media only screen and (max-width: 600px) {
   header {
-    height: 20vh;
     .grid-container {
       .core-container {
+        margin-bottom: 70px;
         .links-container {
           display: none;
         }
@@ -121,7 +121,6 @@ header {
 
 @media only screen and (max-width: 400px) {
   header {
-    height: 25vh;
     .grid-container {
       grid-template-columns: 0fr 1fr 0fr;
       .core-container {

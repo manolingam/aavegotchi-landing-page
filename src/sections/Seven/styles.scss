@@ -30,7 +30,6 @@
             repeat-x;
         }
         div {
-          height: 100px;
           display: flex;
           flex-direction: row;
           justify-content: center;
@@ -75,6 +74,7 @@
 
         button:hover {
           border-bottom-width: 2px;
+          margin-top: 3px;
           cursor: pointer;
         }
       }
@@ -94,11 +94,9 @@
         height: 100%;
         .core-container {
           height: 100%;
-          justify-content: center;
           h3 {
             width: 100%;
             font-size: 22px;
-            margin-top: 0;
           }
           div {
             flex-direction: column;
@@ -115,6 +113,9 @@
             width: auto;
             margin: 20px 0 0 0;
             font-size: 18px;
+          }
+          button:hover {
+            margin-top: 23px;
           }
         }
       }

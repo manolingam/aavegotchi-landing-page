@@ -2,7 +2,6 @@
 @import '../../utils/constants.scss';
 
 #one {
-  height: 100%;
   width: 100%;
   background: linear-gradient(180deg, #b283e1 0%, #f5d7ff 100%);
 
@@ -13,6 +12,7 @@
   .grid-container {
     display: grid;
     grid-template-columns: 1fr 8fr 1fr;
+    margin-bottom: 100px;
     .core-container {
       display: flex;
       flex-direction: row;
