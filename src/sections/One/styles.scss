@@ -14,21 +14,25 @@
     grid-template-columns: 1fr 8fr 1fr;
     margin-bottom: 100px;
     .core-container {
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      justify-content: space-evenly;
+      // display: flex;
+      // flex-direction: row;
+      // align-items: flex-start;
+      // justify-content: space-evenly;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      place-items: center;
       font-family: $pixelar-font;
 
       #gotchigang-image {
         width: 400px;
-        margin-top: 100px;
+        // margin-top: 100px;
       }
 
       .right-container {
+        // max-width: 50%;
         display: flex;
         flex-direction: column;
-        margin-top: 100px;
+        // margin-top: 100px;
         margin-left: 50px;
 
         .slogan-container {
@@ -57,6 +61,7 @@
         }
 
         .right-bottom-container {
+          min-height: 75px;
           display: flex;
           flex-direction: row;
           align-items: center;
@@ -98,10 +103,10 @@
   #one {
     .grid-container {
       .core-container {
-        flex-direction: column;
-        justify-content: flex-start;
+        // flex-direction: column;
+        // justify-content: flex-start;
+        grid-template-columns: 1fr;
         .right-container {
-          width: 100%;
           margin: 0;
 
           .slogan-container {
