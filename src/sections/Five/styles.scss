@@ -147,33 +147,26 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 960px) {
   #five {
     .grid-container {
       .core-container {
         .inner-core-container {
-          width: 100%;
+          width: auto;
+        }
+      }
+    }
+  }
+}
 
-          #dao-logo {
-            width: 100px;
-            margin: 0 auto 15px auto;
-          }
-
-          .button-container {
-            button {
-              bottom: -40px;
-              font-size: 22px;
-              letter-spacing: 1.1px;
-            }
-          }
-
-          #description-text {
-            width: 90%;
-            font-size: 22px;
-            line-height: 18px;
-            line-height: 20px;
-            letter-spacing: 1px;
-          }
+@media only screen and (max-width: 760px) {
+  #five {
+    .grid-container {
+      .core-container {
+        .inner-core-container {
+          line-height: 24px;
+          font-size: 22px;
+          margin-bottom: 75px;
 
           .card-container {
             height: auto;
@@ -196,17 +189,53 @@
           .card-container-one {
             #violet-arrow-image {
               display: none;
-              // top: 325px;
-              // width: 90px;
             }
           }
 
           .card-container-two {
             #violet-arrow-image {
               display: none;
-              // top: 306px;
-              // width: 90px;
             }
+          }
+
+          .button-container {
+            button {
+              bottom: -50px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #five {
+    .grid-container {
+      .core-container {
+        .inner-core-container {
+          width: 100%;
+          margin-bottom: 0;
+
+          #dao-logo {
+            width: 100px;
+            margin: 0 auto 15px auto;
+          }
+
+          .button-container {
+            button {
+              bottom: -40px;
+              font-size: 22px;
+              letter-spacing: 1.1px;
+            }
+          }
+
+          #description-text {
+            width: 90%;
+            font-size: 22px;
+            line-height: 18px;
+            line-height: 20px;
+            letter-spacing: 1px;
           }
 
           .button-container {

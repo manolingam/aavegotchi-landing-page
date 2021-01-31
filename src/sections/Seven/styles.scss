@@ -87,6 +87,31 @@
   }
 }
 
+@media only screen and (max-width: 760px) {
+  #seven {
+    #top-container {
+      .grid-container {
+        .core-container {
+          h3 {
+            width: 100%;
+          }
+          input {
+            width: 300px;
+            font-size: 20px;
+            padding: 12px;
+          }
+          input::placeholder {
+            font-size: 20px;
+          }
+          button {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 600px) {
   #seven {
     #top-container {
@@ -95,7 +120,6 @@
         .core-container {
           height: 100%;
           h3 {
-            width: 100%;
             font-size: 22px;
           }
           div {

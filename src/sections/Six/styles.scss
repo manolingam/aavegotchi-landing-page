@@ -101,7 +101,21 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 960px) {
+  #six {
+    .grid-container {
+      .core-container {
+        .inner-core-container {
+          .card-container {
+            grid-template-columns: 1fr 1fr;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 760px) {
   #six {
     .grid-container {
       .core-container {
@@ -124,8 +138,21 @@
             letter-spacing: 1px;
           }
           .card-container {
-            margin: 50px 0 100px 0;
             grid-template-columns: 1fr;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #six {
+    .grid-container {
+      .core-container {
+        .inner-core-container {
+          .card-container {
+            margin: 50px 0 100px 0;
             div {
               width: auto;
               height: 250px;

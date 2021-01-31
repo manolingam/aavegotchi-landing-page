@@ -83,6 +83,40 @@
   }
 }
 
+@media only screen and (max-width: 960px) {
+  #two {
+    .grid-container {
+      .core-container {
+        .sub-container {
+          width: 60%;
+          border-width: 14px;
+          .overlap-container {
+            width: 350px;
+            left: -140px;
+            border-width: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  #two {
+    .grid-container {
+      .core-container {
+        .sub-container {
+          width: 70%;
+          p {
+            font-size: 18px;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 600px) {
   #two {
     .grid-container {
