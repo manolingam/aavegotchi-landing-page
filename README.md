@@ -124,6 +124,6 @@ src ──|
 
 ### Styling
 
-The styles are done in SASS and all the 7 sections including header has the following common layout below. Elements inside the `core-container` have their own individual styles. Regarding responsivesness, we have 4 breakpoints (_960px, 760px, 600px & 400px)_ in each of the respective section _sass_ files. 
+The styles are done in SASS and all the 7 sections including header has the following common layout below. Elements inside the `core-container` have their own individual styles. Regarding responsiveness, we have 4 breakpoints (_960px, 760px, 600px & 400px)_ in each of the respective section _sass_ files. 
 
 ![layout](https://res.cloudinary.com/saimano/image/upload/v1612176738/Aavegothci/layout.png)
