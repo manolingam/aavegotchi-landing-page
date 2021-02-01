@@ -4,36 +4,7 @@ import './styles.scss';
 
 import gotchi_image from '../../assets/images/gotchi_image.svg';
 
-const card_items = [
-  {
-    h3_text: 'Interact with other Gotchis',
-    p_text: 'Sat hello! Visit friends and make new ones.'
-  },
-  {
-    h3_text: 'Play games',
-    p_text: 'Enter your Gotchi into competition! Rack up wins to level up.'
-  },
-  {
-    h3_text: 'Vote in the DAO',
-    p_text:
-      'Head into the metaverse governance building to cast your vote for the future of Aavagotchi.'
-  },
-  {
-    h3_text: 'Buy land',
-    p_text:
-      "Metaverse 'REALM parcels' will be purchasable in the Aavagotchi store."
-  },
-  {
-    h3_text: 'Find a caretaker',
-    p_text:
-      "Choose a special someone to take care of your Gotchi while you're away."
-  },
-  {
-    h3_text: 'Read the wiki',
-    p_text:
-      'Expand your knowledge of all things Aavegotchi and become a master player.'
-  }
-];
+const { CARD_ITEMS } = require('../../utils/constants');
 
 const Index = () => {
   return (
@@ -60,7 +31,7 @@ const Index = () => {
               to do in the future
             </p>
             <div className='card-container'>
-              {card_items.map((item, index) => {
+              {CARD_ITEMS.map((item, index) => {
                 return (
                   <div key={index}>
                     <span></span>

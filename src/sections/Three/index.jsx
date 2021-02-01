@@ -7,34 +7,7 @@ import fire_icon from '../../assets/icons/fire_icon.svg';
 import pink_arrow_image from '../../assets/images/pink_arrow_image.png';
 import blue_arrow_image from '../../assets/images/blue_arrow_image.png';
 
-const list_items = [
-  {
-    class: 'info-card-text-top',
-    text:
-      'Buy GHST directly from the Aavegotchi bonding curve, or from popular DEXs and exchanges.'
-  },
-  {
-    class: 'info-card-text-top',
-    text:
-      'Earn GHST by gameplay, participating in the DAO, rarity farming, and more!'
-  },
-  {
-    class: 'info-card-text-bottom',
-    text:
-      'Stake GHST to earn raffle tickets for a chance to win wearbales, and unlock parcel features in the Metaverse (soon).'
-  },
-  {
-    class: 'info-card-text-bottom',
-    text:
-      'Spend GHST on gotchi Portals, wearables, consumables and, soon, on Metaverse parcels.'
-  }
-];
-
-const lines = [
-  'GHST is the governance token of the Metaverse, and a requirement for gameplay.',
-  'Use GHST to: claim Gotchis; earn raffle tickets;',
-  'buy wearables, consumbales, and REALM parcels; vote.'
-];
+const { SECTION_THREE_LIST_ITEMS, LINES } = require('../../utils/constants');
 
 const Index = () => {
   return (
@@ -46,7 +19,7 @@ const Index = () => {
         <div className='core-container'>
           <div>
             <p id='section-title'>The GHST Token</p>
-            {lines.map((item, index) => {
+            {LINES.map((item, index) => {
               return (
                 <p key={index} className='lines'>
                   {item}
@@ -72,7 +45,7 @@ const Index = () => {
               <button id='spend-ghst-button'>spend GHST</button>
             </div>
 
-            {list_items.map((item, index) => {
+            {SECTION_THREE_LIST_ITEMS.map((item, index) => {
               return (
                 <p key={index} className={`info-card-text ${item.class}`}>
                   {item.text}
