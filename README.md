@@ -10,7 +10,7 @@ As the design is kind of unique and complex, below are some common helpers and i
 
 ### File Structure
 - **assets** contain all the static images, borders, icons, borders & fonts used in _png_ & _svg_ formats under their own categories.
-- **sections** contain each of the different app sections starting from _one_ (top) to _seven_(bottom) with each section folder holding their corresponding JSX & SASS.
+- **sections** contain each of the different app sections starting from _one_ (top) to _seven_ (bottom) with each section folder holding their corresponding JSX & SASS.
 - **utils** contain JS & SASS constants.
 
 ```
@@ -124,6 +124,6 @@ src ──|
 
 ### Styling
 
-The styles are done in SASS and all the 7 sections including header has the following common layout below. Elements inside the `core-container` have their own individual styles. Regarding responsivesness, we have 4 breakpoints (_960px, 760px, 600px & 400px)_ in each of the respective section _sass_ files. 
+The styles are done in SASS and all the 7 sections including header has the following common layout below. Elements inside the `core-container` have their own individual styles. Regarding responsiveness, we have 4 breakpoints (_960px, 760px, 600px & 400px)_ in each of the respective section _sass_ files. 
 
 ![layout](https://res.cloudinary.com/saimano/image/upload/v1612176738/Aavegothci/layout.png)
