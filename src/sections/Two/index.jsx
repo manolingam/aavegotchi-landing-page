@@ -2,7 +2,6 @@ import React from 'react';
 
 import './styles.scss';
 
-import pixel_overlay_two from '../../assets/overlays/pixel_overlay_two.svg';
 import ghst_token_logo from '../../assets/logos/ghst_token_logo.svg';
 import portal_closed_image from '../../assets/images/portal_closed_image.svg';
 import portal_opened_image from '../../assets/images/portal_open_image.svg';
@@ -35,36 +34,38 @@ const list_items = [
 const Index = () => {
   return (
     <section id='two'>
-      <img
-        className='section-pixel-divider'
-        src={pixel_overlay_two}
-        alt='pixel group'
-      />
+      <div className='section-pixel-divider'></div>
 
-      <div className='sub-container'>
-        <div>
-          <h3>The Portal</h3>
-          <p style={{ marginTop: '.3rem' }}>
-            How do you bring your Gotchi from the Nether realm to your screen?
-            Through a Portal, of course!
-          </p>
-        </div>
-
-        {list_items.map((item, index) => {
-          return (
-            <div className='list' key={index}>
-              <img src={item.image} alt={item.image_alt} />
-              <p>{item.text}</p>
+      <div className='grid-container'>
+        <div></div>
+        <div className='core-container'>
+          <div className='sub-container'>
+            <div>
+              <h3>The Portal</h3>
+              <p>
+                How do you bring your Gotchi from the Nether realm to your
+                screen? Through a Portal, of course!
+              </p>
             </div>
-          );
-        })}
 
-        <div className='overlap-container'>
-          <h3>How to play</h3>
-          <p>
-            Claim your Gotchi by summoning a portal and staking Spirit Force
-          </p>
+            {list_items.map((item, index) => {
+              return (
+                <div className='list' key={index}>
+                  <img src={item.image} alt={item.image_alt} />
+                  <p>{item.text}</p>
+                </div>
+              );
+            })}
+
+            <div className='overlap-container'>
+              <h3>How to play</h3>
+              <p>
+                Claim your Gotchi by summoning a portal and staking Spirit Force
+              </p>
+            </div>
+          </div>
         </div>
+        <div></div>
       </div>
     </section>
   );

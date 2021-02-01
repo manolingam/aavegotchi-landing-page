@@ -10,6 +10,7 @@ import Seven from './sections/Seven/index';
 import './App.scss';
 
 function App() {
+  console.log(window.innerHeight, window.innerWidth);
   return (
     <div className='app'>
       <Header />

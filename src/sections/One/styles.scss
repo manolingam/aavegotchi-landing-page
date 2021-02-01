@@ -1,82 +1,218 @@
-@import 'node_modules/pixel-borders/src/styles/pixel-borders.scss';
 @import '../../utils/constants.scss';
 
 #one {
   width: 100%;
   background: linear-gradient(180deg, #b283e1 0%, #f5d7ff 100%);
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-evenly;
 
-  #gotchigang-image {
-    width: 450px;
-    position: relative;
-    margin: 5rem 3rem 3rem 3rem;
+  .section-pixel-divider {
+    background: url('../../assets/overlays/pixel_overlay_one.svg') repeat-x;
   }
 
-  .right-container {
-    width: 40%;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 5rem 3rem 3rem 3rem;
-    .slogan-container {
-      width: 100%;
-      font-family: $press-start-font;
-      font-size: 28px;
-      line-height: 60px;
-      color: #3f0065;
-      p:nth-child(1) {
-        text-align: left;
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    margin-bottom: 100px;
+    .core-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      place-items: center;
+      font-family: $pixelar-font;
+      margin: 15px 0;
+
+      #gotchigang-image {
+        width: 400px;
       }
-      p:nth-child(2) {
-        text-align: right;
+
+      .right-container {
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+
+        .slogan-container {
+          font-size: 4rem;
+          line-height: 60px;
+          color: #3f0065;
+          margin-bottom: 50px;
+          font-weight: 600;
+          p:nth-child(1) {
+            text-align: left;
+          }
+          p:nth-child(2) {
+            text-align: right;
+          }
+        }
+
+        #explainer-text {
+          font-size: 1.5rem;
+          line-height: 36px;
+          letter-spacing: 2px;
+          color: #3f0065;
+          span {
+            color: #bd00e0;
+            text-decoration: underline;
+          }
+        }
+
+        .right-bottom-container {
+          min-height: 75px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: flex-end;
+          margin-top: 1rem;
+          #rainbow-text-image {
+            margin-right: 2rem;
+          }
+
+          button {
+            border: 2px solid #a18a04;
+            background: linear-gradient(180deg, #f3e597 0%, #f0d129 100%);
+            padding: 0.5rem 1rem;
+            color: black;
+            border-radius: 6px;
+            border-bottom: 5px solid #a18a04;
+            transition: all 0.1s ease-in-out;
+            font-size: 28px;
+            letter-spacing: 2px;
+            line-height: normal;
+          }
+
+          button:hover {
+            border-bottom-width: 2px;
+            margin-top: 3px;
+            cursor: pointer;
+          }
+        }
+
+        #powered-by-aave-image {
+          margin-right: auto;
+        }
       }
     }
+  }
+}
 
-    #explainer-text {
-      font-family: $source-sans-font;
-      font-size: 20px;
-      line-height: 36px;
-      letter-spacing: 2px;
-      color: #3f0065;
-      span {
-        color: #bd00e0;
-        text-decoration: underline;
+@media only screen and (max-width: 960px) {
+  #one {
+    .grid-container {
+      .core-container {
+        #gotchigang-image {
+          width: 250px;
+        }
+        .right-container {
+          .slogan-container {
+            font-size: 3rem;
+            margin-bottom: 30px;
+          }
+          #explainer-text {
+            font-size: 1.2rem;
+            line-height: 25px;
+          }
+          .right-bottom-container {
+            #rainbow-text-image {
+              width: 150px;
+            }
+          }
+        }
       }
     }
+  }
+}
 
-    .right-bottom-container {
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: flex-end;
-      margin-top: 1rem;
-      #rainbow-text-image {
-        margin-right: 2rem;
-      }
-      button {
-        padding: 0.8rem 1rem 0.8rem 1rem;
-        @include pixel-borders(
-          $corner-size: 1,
-          $border-size: 4px,
-          $border-color: #000,
-          $border-inset-color: false
-        );
-        background: #f0d129;
-        font-family: $press-start-font;
-        font-size: 18px;
-        color: white;
-        -webkit-text-stroke: 1.5px black;
+@media only screen and (max-width: 760px) {
+  #one {
+    .grid-container {
+      .core-container {
+        .right-container {
+          .slogan-container {
+            font-size: 2rem;
+            line-height: 40px;
+          }
+        }
       }
     }
+  }
+}
 
-    #powered-by-aave-image {
-      margin-right: auto;
+@media only screen and (max-width: 600px) {
+  #one {
+    .grid-container {
+      .core-container {
+        grid-template-columns: 1fr;
+        .right-container {
+          margin: 0;
+
+          .slogan-container {
+            width: 100%;
+            font-size: 2.5rem;
+            margin: 15px auto 10px auto;
+            line-height: 36px;
+          }
+
+          #explainer-text {
+            font-size: 1.5rem;
+            line-height: 24px;
+            letter-spacing: 1px;
+          }
+
+          .right-bottom-container {
+            justify-content: flex-end;
+            #rainbow-text-image {
+              width: 250px;
+            }
+
+            button {
+              font-size: 20px;
+            }
+          }
+
+          #powered-by-aave-image {
+            margin: 10px auto 0 auto;
+          }
+        }
+
+        #gotchigang-image {
+          width: 250px;
+          margin: 35px auto 25px auto;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #one {
+    .grid-container {
+      .core-container {
+        .right-container {
+          .slogan-container {
+            font-size: 28px;
+          }
+
+          #explainer-text {
+            font-size: 18px;
+          }
+
+          .right-bottom-container {
+            #rainbow-text-image {
+              width: 125px;
+            }
+
+            button {
+              font-size: 18px;
+            }
+          }
+
+          #powered-by-aave-image {
+            margin: 10px auto 0 auto;
+          }
+        }
+
+        #gotchigang-image {
+          width: 160px;
+          margin: 25px auto 0 auto;
+        }
+      }
     }
   }
 }
