@@ -1,70 +1,126 @@
-# Getting Started with Create React App
+# Aavegotchi
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The official landing / marketing page of Aavegotchi.
 
-## Available Scripts
+![app](https://res.cloudinary.com/saimano/image/upload/v1612173933/Aavegothci/aavegotchi_snapshot.png)
 
-In the project directory, you can run:
+## Instructions
+As the design is kind of unique and complex, below are some common helpers and instructions on how the implementation is done.
 
-### `yarn start`
+### File Structure
+- **assets** contain all the static images, borders, icons, borders & fonts used in _png_ & _svg_ formats under their own categories.
+- **sections** contain each of the different app sections starting from _one_ (top) to _seven_(bottom) with each section folder holding their corresponding JSX & SASS.
+- **utils** contain JS & SASS constants.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```
+src ──|
+      |   App.js
+      │   App.scss
+      │   index.css 
+      │   index.js
+      │   reportWebVitals.js
+      │
+      ├───assets
+      │   ├───backgrounds
+      │   │       dao_background.png
+      │   │       drum_pattern_background.png
+      │   │       ghost_pattern_background.svg
+      │   │       ghst_token_background.svg
+      │   │
+      │   ├───borders
+      │   │       black_box_border.png
+      │   │       blue_box_border.png
+      │   │       burn_box_border.png
+      │   │       dark_red_box_border.png
+      │   │       dark_red_pink_bg_border.png
+      │   │       pink_box_border.png
+      │   │       secondary_button_border.svg
+      │   │       two_pixel_border.png
+      │   │       violet_box_border.png
+      │   │       violet_light_pink_border.png
+      │   │
+      │   ├───buttons
+      │   │       pink_button.png
+      │   │       pink_button.svg
+      │   │       randomize_button.svg
+      │   │       remind_me_button.svg
+      │   │       violet_button.svg
+      │   │
+      │   ├───fonts
+      │   │       pixelar.ttf
+      │   │
+      │   ├───icons
+      │   │       dai_icon.svg
+      │   │       dice_icon.svg
+      │   │       fire_icon.svg
+      │   │       ham_lines_icon.svg
+      │   │       usdc_icon.svg
+      │   │
+      │   ├───images
+      │   │       beach_snap_image.svg
+      │   │       blue_arrow_image.png
+      │   │       gotchigang_image.svg
+      │   │       gotchi_image.svg
+      │   │       pink_arrow_image.png
+      │   │       portal_closed_image.svg
+      │   │       portal_open_image.svg
+      │   │       powered_by_aave_image.svg
+      │   │       powered_by_chainlink_image.svg
+      │   │       rainbow_text_image.svg
+      │   │       violet_arrow_image.png
+      │   │
+      │   ├───logos
+      │   │       aavegotchi_dao_logo.svg
+      │   │       ghst_token_logo.svg
+      │   │       header_logo.svg
+      │   │
+      │   └───overlays
+      │           pixel_overlay_four.svg
+      │           pixel_overlay_header.svg
+      │           pixel_overlay_one.svg
+      │           pixel_overlay_seven.svg
+      │           pixel_overlay_six.svg
+      │           pixel_overlay_three.svg
+      │           pixel_overlay_two.svg
+      │
+      ├───sections
+      │   ├───Five
+      │   │       index.jsx
+      │   │       styles.scss
+      │   │
+      │   ├───Four
+      │   │       index.jsx
+      │   │       styles.scss
+      │   │
+      │   ├───Header
+      │   │       index.jsx
+      │   │       styles.scss
+      │   │
+      │   ├───One
+      │   │       index.jsx
+      │   │       styles.scss
+      │   │
+      │   ├───Seven
+      │   │       index.jsx
+      │   │       styles.scss
+      │   │
+      │   ├───Six
+      │   │       index.jsx
+      │   │       styles.scss
+      │   │
+      │   ├───Three
+      │   │       index.jsx
+      │   │       styles.scss
+      │   │
+      │   └───Two
+      │           index.jsx
+      │           styles.scss
+      │
+      └───utils
+              constants.scss
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Styling
+The styles are done in SASS and all the 7 sections including header has the following common layout below. Elements inside the `core-container` have their own individual styles. Regarding responsivesness, we have 4 breakpoints (_960px, 760px, 600px & 400px)_ in each of the respective section _sass_ files. 
 
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![layout](https://res.cloudinary.com/saimano/image/upload/v1612176738/Aavegothci/layout.png)
