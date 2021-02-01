@@ -120,6 +120,7 @@ src ──|
       │
       └───utils
               constants.scss
+              constants.js
 ```
 
 ### Styling
