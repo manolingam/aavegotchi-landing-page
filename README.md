@@ -10,7 +10,7 @@ As the design is kind of unique and complex, below are some common helpers and i
 
 ### File Structure
 - **assets** contain all the static images, borders, icons, borders & fonts used in _png_ & _svg_ formats under their own categories.
-- **sections** contain each of the different app sections starting from _one_ (top) to _seven_(bottom) with each section folder holding their corresponding JSX & SASS.
+- **sections** contain each of the different app sections starting from _one_ (top) to _seven_ (bottom) with each section folder holding their corresponding JSX & SASS.
 - **utils** contain JS & SASS constants.
 
 ```
